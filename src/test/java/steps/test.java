@@ -1,4 +1,4 @@
-package steps.test;
+package steps;
 
 import core.selenium.WebDriverManager;
 import cucumber.api.java.en.Given;
@@ -13,7 +13,7 @@ public class test {
         driver.manage().window().maximize();
         driver.get("https://www.google.com");
         //driver.wait(10);
-        //driver.close();
+        driver.close();
     }
 
 

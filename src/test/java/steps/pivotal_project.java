@@ -1,4 +1,4 @@
-package steps.test;
+package steps;
 
 import core.selenium.WebDriverManager;
 import cucumber.api.java.en.Given;
@@ -16,13 +16,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pivotal.ui.ProjectDashboardPage;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+
 public class pivotal_project {
 
-    WebDriver driver;
+   WebDriver driver;
 
     @Given("^I Open the Pivotal Application$")
     public void openTheApplication() {
@@ -70,8 +72,6 @@ public class pivotal_project {
      List<WebElement> projects = driver.findElements(By.xpath("//a[@data-aid=\"project-name\" and text()=\"Project 1\"]"));
      Assert.assertTrue(projects.size() >0 );
     }
-
-
 }
 
 
