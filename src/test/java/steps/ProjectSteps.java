@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import pivotal.ui.CreateProjectPopup;
 import pivotal.ui.PageTransporter;
 import pivotal.ui.ProjectDashboardPage;
+import pivotal.ui.ProjectsPage;
 
 import java.util.List;
 import java.util.Map;
@@ -21,15 +22,8 @@ public class ProjectSteps {
     //pages
     ProjectDashboardPage projectDashboardPage;
     CreateProjectPopup createProjectPopup;
-   // ProjectPage projectPage;
+    ProjectsPage projectsPage;
 
-    //entities
-    //Project project;
-
-    //@And
-            //popolate Project entity
-      //      project.setProjectInformation(table);
-    //create project by ui
     @When("^I navigate to Project Dashboard page$")
     public void navigateToProjectDashboardPage(){
         projectDashboardPage = pageTransporter.navigateToProjectDashboardPage();
@@ -47,13 +41,32 @@ public class ProjectSteps {
         Assert.assertTrue(WebDriverManager.getInstance().getWebDriver().getCurrentUrl().contains("https://www.pivotaltracker.com/n/projects/"));
     }
 
+//    public void verifyProjectPageIsDisplayed(){
+//        Assert.assertTrue(WebDriverManager.getInstance().getWebDriver().getCurrentUrl().contains("https://www.pivotaltracker.com/n/projects/"));
+//    }
+
+
     @Then("^the Project name \"([^\"]*)\" should be displayed in Project Dashboard page$")
     public void projectIsDisplayed(String projectName) {
         Assert.assertTrue(projectDashboardPage.projectNameIsListed(projectName) );
     }
 
-   // @When("^I navigate to Projects page$")
+    @When("^I navigate to Projects page$")
+    public void navigateToProjectsPage(){
+        projectsPage = pageTransporter.navigateToProjectsPage();
+    }
 
-    //@Then("^the Project name should be displayed in Projects page$")
+    @Then("^the Project name \"([^\"]*)\" should be displayed in Projects page$")
+    public void verifyProjectIsDisplayed(String projectName) {
+        Assert.assertTrue(projectsPage.projectNameIsListed(projectName));
+    }
 
+//    @When("^I display the Projects menu from the top bar$")
+//    public void navigateToProjectsMenuFromTopBar(){
+//        projectsFromTopBar = pageTransporter.navigateToProjectsMenuFromTopBar();
+//    }
+//    @Then(("^the Project name should be displayed in the Projects menu$")
+//    public void verifyProjectIsDisplayed(String projectName) {
+//       Assert.assertTrue(projectsFromTopBar.projectNameIsListed(projectName));
+//    }
 }

@@ -8,9 +8,18 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.util.List;
 
 public class ProjectDashboardPage extends BasePage{
-
-    @FindBy(id="create-project-button")
+   // private static final ACCOUNT_SELECTOR="//a[@data-aid=\"project-name\" and text()=\""+projectName+"\"]";
+////span[contains(.,'project test')]
+    @FindBy(id = "create-project-button")
     private WebElement createButton;
+
+    @FindBy(xpath = "press-button")
+    private WebElement pressButton;
+
+    @FindBy(xpath = "@FindBy(xpath = \"press-button\")\n" +
+            "    private WebElement pressButton;\n")
+    private WebElement nameProject;
+
 
     @Override
     public void waitUntilPageObjectIsLoaded() {
@@ -22,8 +31,15 @@ public class ProjectDashboardPage extends BasePage{
         return new CreateProjectPopup();
     }
 
+//    public PopupButton pressButtonProjectList(){
+//        pressButton.click();
+//        return new PopupButton();
+//    }
+
     public boolean projectNameIsListed(String projectName){
         List<WebElement> projects = driver.findElements(By.xpath("//a[@data-aid=\"project-name\" and text()=\""+projectName+"\"]"));
         return projects.size() >0;
     }
+
+
 }

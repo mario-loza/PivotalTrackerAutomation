@@ -63,4 +63,8 @@ public class PageTransporter {
         goToURL(baseURL.concat("dashboard"));
         return new ProjectDashboardPage();
     }
+    public ProjectsPage navigateToProjectsPage(){
+       goToURL(baseURL.concat("projects"));
+       return new ProjectsPage();
+   }
 }
