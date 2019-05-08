@@ -1,6 +1,7 @@
 package pivotal.ui;
 
 import core.selenium.WebDriverManager;
+import core.utils.Setup;
 import org.openqa.selenium.WebDriver;
 
 import java.net.MalformedURLException;
@@ -8,7 +9,7 @@ import java.net.URL;
 
 public class PageTransporter {
 
-    private String baseURL = "https://www.pivotaltracker.com/";
+    private String baseURL = Setup.getInstance().urlBasePath;//"https://www.pivotaltracker.com/";
     private WebDriver webDriver;
 
     private static PageTransporter instance;
