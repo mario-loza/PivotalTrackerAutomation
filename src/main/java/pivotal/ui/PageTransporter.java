@@ -64,7 +64,17 @@ public class PageTransporter {
         return new ProjectDashboardPage();
     }
     public ProjectsPage navigateToProjectsPage(){
-       goToURL(baseURL.concat("projects"));
-       return new ProjectsPage();
-   }
+        goToURL(baseURL.concat("projects"));
+        return new ProjectsPage();
+    }
+
+    public ProjectsDropDownPanel navigateToProjectsDropDownPanel(){
+        goToURL(baseURL.concat("DropDownPanel"));
+        return new ProjectsDropDownPanel();
+    }
+
+    public IntroductionPage navigateToIntroductionPage(){
+        goToURL(baseURL.concat("introduction"));
+        return new IntroductionPage();
+    }
 }

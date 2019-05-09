@@ -13,14 +13,11 @@ public class TopBar extends BasePage{
     @FindBy(xpath="//button[@class=\"tc_projects_dropdown_link tc_context_name\"]")
     private WebElement projectDropdownbutton;
 
-
     @FindBy(css = ".project_name")
     private WebElement lastproject;
 
     @FindBy(css = ".wrapper h1")
     private WebElement labelProjectsH1;
-
-
 
     public ProjectsDropDownPanel PressProjectDropdownbutton(){
         projectDropdownbutton.click();

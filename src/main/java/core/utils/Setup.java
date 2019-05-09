@@ -38,7 +38,7 @@ public class Setup {
     private void initialize(){
         JSONParser parser = new JSONParser();
 
-        try (Reader reader = new FileReader("c:\\users\\melvi\\github\\gui\\project1\\practica\\src\\test\\resources\\config.json")) {
+        try (Reader reader = new FileReader("c:\\github\\roman\\project2\\practica\\src\\test\\resources\\config.json")) {
 
             JSONObject jsonObject = (JSONObject) parser.parse(reader);
 

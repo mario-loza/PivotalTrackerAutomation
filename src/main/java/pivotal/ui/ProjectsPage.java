@@ -8,13 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.util.List;
 
 public class ProjectsPage extends BasePage {
-    // private  TopBar topBar;
-//    public void getTopBar(TopBar topBar) {
-//        this.topBar = topBar;
-//    }
 
-    //span[@class="raw_project_name public" and text()="project test"]
-    //span[@class="raw_context_name public" and text()="project test"]
     @FindBy(css = ".project_name")
     private WebElement lastproject;
 

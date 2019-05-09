@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class ProjectSteps {
 
-    PageTransporter pageTransporter= PageTransporter.getInstance();
+    PageTransporter pageTransporter = PageTransporter.getInstance();
 
     //pages
     ProjectDashboardPage projectDashboardPage;
@@ -22,21 +22,29 @@ public class ProjectSteps {
     ProjectsPage projectsPage;
     TopBar topBar;
     ProjectsDropDownPanel projectsDropDownPanel;
+    IntroductionPage introductionPage;
 
     @When("^I navigate to Project Dashboard page$")
-    public void navigateToProjectDashboardPage(){
+    public void navigateToProjectDashboardPage() {
         projectDashboardPage = pageTransporter.navigateToProjectDashboardPage();
     }
 
     @And("^I create a new Project from Project Dashboard page with the following values$")
-    public void createProject(DataTable dt){
-        List<Map<String,String>> data = dt.asMaps(String.class,String.class);
+    public void createProject(DataTable dt) {
+        List<Map<String, String>> data = dt.asMaps(String.class, String.class);
         createProjectPopup = projectDashboardPage.pressCreateProjectButton();
         createProjectPopup.createNewProject(data.get(0).get("Project Name"), data.get(0).get("Account"), data.get(0).get("Project privacy"));
     }
 
+    @And("^I create a new Project from Projects page with the following values$")
+    public void createProjects(DataTable dt) {
+        List<Map<String, String>> data = dt.asMaps(String.class, String.class);
+        createProjectPopup = projectsPage.pressCreateProjectLink();
+        createProjectPopup.createNewProject(data.get(0).get("Project Name"), data.get(0).get("Account"), data.get(0).get("Project privacy"));
+    }
+
     @Then("^the Project page should be displayed$")
-    public void projectPageShouldBeDisplayed(){
+    public void projectPageShouldBeDisplayed() {
         Assert.assertTrue(WebDriverManager.getInstance().getWebDriver().getCurrentUrl().contains("https://www.pivotaltracker.com/n/projects/"));
     }
 
@@ -47,11 +55,11 @@ public class ProjectSteps {
 
     @Then("^the Project name \"([^\"]*)\" should be displayed in Project Dashboard page$")
     public void projectIsDisplayed(String projectName) {
-        Assert.assertTrue(projectDashboardPage.projectNameIsListed(projectName) );
+        Assert.assertTrue(projectDashboardPage.projectNameIsListed(projectName));
     }
 
     @When("^I navigate to Projects page$")
-    public void navigateToProjectsPage(){
+    public void navigateToProjectsPage() {
         projectsPage = pageTransporter.navigateToProjectsPage();
     }
 
@@ -61,12 +69,29 @@ public class ProjectSteps {
     }
 
     @When("^I display the Projects menu from the top bar$")
-    public void displayToProjectsMenuFromTopBar(){
+    public void displayToProjectsMenuFromTopBar() {
         topBar = new TopBar();
         projectsDropDownPanel = topBar.PressProjectDropdownbutton();
     }
+
     @Then("^the Project name \"([^\"]*)\" should be displayed in the Projects menu$")
     public void verifyProjectIsDisplayedInProjectsPanel(String projectName) {
-       Assert.assertTrue(projectsDropDownPanel.projectNameIsListed(projectName));
+        Assert.assertTrue(projectsDropDownPanel.projectNameIsListed(projectName));
+    }
+
+    @When("^I navigate to Introduction page$")
+    public void navigateToIntroductionPage() {
+        introductionPage = pageTransporter.navigateToIntroductionPage();
+    }
+
+    @And("^I create a new Project from Introduction page with the name \"([^\"]*)\"$")
+    public void createFirstProject(String projectName) {
+        createProjectPopup = projectsPage.pressCreateProjectLink();
+        introductionPage.firstProject(projectName);
+    }
+
+    @When("^I navigate to Projects Drop Down Panel$")
+    public void navigateToProjectsDropDownPanel() {
+        projectsDropDownPanel = pageTransporter.navigateToProjectsDropDownPanel();
     }
 }

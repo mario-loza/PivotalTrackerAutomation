@@ -33,6 +33,7 @@ public class CreateProjectPopup extends BasePage {
     }
 
     public void setProjectNameTextBox (String projectName) {
+
         projectNameTextBox.sendKeys(projectName);
     }
 
