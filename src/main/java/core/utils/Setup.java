@@ -33,15 +33,17 @@ public class Setup {
     }
 
     public String urlBasePath;
+    public String browser;
 
     private void initialize(){
         JSONParser parser = new JSONParser();
 
-        try (Reader reader = new FileReader("c:\\users\\melvi\\github\\gui\\project\\practica\\src\\test\\resources\\config.json")) {
+        try (Reader reader = new FileReader("c:\\users\\melvi\\github\\gui\\project1\\practica\\src\\test\\resources\\config.json")) {
 
             JSONObject jsonObject = (JSONObject) parser.parse(reader);
 
             urlBasePath = (String) jsonObject.get("basePath");
+            browser = (String) jsonObject.get("browser");
 
 
         } catch (IOException e) {

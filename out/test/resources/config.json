@@ -1,3 +1,4 @@
 {
-  "basePath" : "https://www.pivotaltracker.com/"
+  "basePath" : "https://www.pivotaltracker.com/",
+  "browser" : "Firefox"
 }

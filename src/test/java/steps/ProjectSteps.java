@@ -7,10 +7,7 @@ import cucumber.api.java.en.When;
 import cucumber.api.java.en.And;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-import pivotal.ui.CreateProjectPopup;
-import pivotal.ui.PageTransporter;
-import pivotal.ui.ProjectDashboardPage;
-import pivotal.ui.ProjectsPage;
+import pivotal.ui.*;
 
 import java.util.List;
 import java.util.Map;
@@ -23,6 +20,8 @@ public class ProjectSteps {
     ProjectDashboardPage projectDashboardPage;
     CreateProjectPopup createProjectPopup;
     ProjectsPage projectsPage;
+    TopBar topBar;
+    ProjectsDropDownPanel projectsDropDownPanel;
 
     @When("^I navigate to Project Dashboard page$")
     public void navigateToProjectDashboardPage(){
@@ -61,12 +60,13 @@ public class ProjectSteps {
         Assert.assertTrue(projectsPage.projectNameIsListed(projectName));
     }
 
-//    @When("^I display the Projects menu from the top bar$")
-//    public void navigateToProjectsMenuFromTopBar(){
-//        projectsFromTopBar = pageTransporter.navigateToProjectsMenuFromTopBar();
-//    }
-//    @Then(("^the Project name should be displayed in the Projects menu$")
-//    public void verifyProjectIsDisplayed(String projectName) {
-//       Assert.assertTrue(projectsFromTopBar.projectNameIsListed(projectName));
-//    }
+    @When("^I display the Projects menu from the top bar$")
+    public void displayToProjectsMenuFromTopBar(){
+        topBar = new TopBar();
+        projectsDropDownPanel = topBar.PressProjectDropdownbutton();
+    }
+    @Then("^the Project name \"([^\"]*)\" should be displayed in the Projects menu$")
+    public void verifyProjectIsDisplayedInProjectsPanel(String projectName) {
+       Assert.assertTrue(projectsDropDownPanel.projectNameIsListed(projectName));
+    }
 }

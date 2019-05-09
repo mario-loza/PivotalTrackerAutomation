@@ -13,15 +13,16 @@ import java.util.HashMap;
 /**
  * Handles Firefox driver initialization.
  */
-public class Firefox {
+public class Firefox implements core.selenium.IDriverInit {
 
     /**
      * Initializes Chrome driver.
      *
      * @return A new FirefoxDriver.
      */
+    @Override
     public WebDriver initDriver() {
-        FirefoxDriverManager.getInstance().version("66.0.5").setup();
+        FirefoxDriverManager.getInstance().setup();
 
         FirefoxOptions firefoxOptions = new FirefoxOptions();
         FirefoxProfile firefoxProfile = new FirefoxProfile();

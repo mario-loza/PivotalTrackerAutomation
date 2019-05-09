@@ -42,7 +42,7 @@ public class CreateProjectPopup extends BasePage {
 
     public void selectaccountDropdownFirstOption(){
 
-        wait.until(ExpectedConditions.elementToBeClickable(getAccountDropDownFirstOption));
+        wait.withTimeout( 2, TimeUnit.SECONDS).until(ExpectedConditions.elementToBeClickable(getAccountDropDownFirstOption));
         getAccountDropDownFirstOption.click();
     }
 

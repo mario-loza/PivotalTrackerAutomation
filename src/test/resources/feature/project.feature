@@ -13,5 +13,5 @@ Feature:  Project management
     When I navigate to Projects page
     Then the Project name "Test Project" should be displayed in Projects page
     When I display the Projects menu from the top bar
-    Then the Project name should be displayed in the Projects menu
+    Then the Project name "Test Project" should be displayed in the Projects menu
 
