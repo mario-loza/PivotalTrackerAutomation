@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class ProjectsDropDownPanel extends BasePage{
 
-    @FindBy(xpath = "//a[contains(.,'+ Create Project')]")
+    @FindBy(xpath = "//a[contains(text(),\"Create Project\")]")
     private WebElement createProjectLink;
 
     @FindBy(xpath = "//a[@href=\"/projects\"]")

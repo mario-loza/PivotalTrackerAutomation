@@ -19,13 +19,18 @@ public class TopBar extends BasePage{
     @FindBy(css = ".wrapper h1")
     private WebElement labelProjectsH1;
 
+    @FindBy(xpath="//div[@class=\"tc_header_text_logo\"]")
+    private WebElement headerTextLogo;
+
+
     public ProjectsDropDownPanel PressProjectDropdownbutton(){
         projectDropdownbutton.click();
         return new ProjectsDropDownPanel();
     }
 
+
     @Override
     public void waitUntilPageObjectIsLoaded() {
-
+         wait.until(ExpectedConditions.visibilityOf(headerTextLogo));
     }
 }

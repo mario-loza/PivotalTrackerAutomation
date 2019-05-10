@@ -7,7 +7,7 @@ import core.utils.Setup;
 public class WebDriverFactory {
 
     public IDriverInit GetDriverInit(){
-        if (Setup.getInstance().browser == "Chrome")
+        if (Setup.getInstance().browser.equals("Chrome"))
             return new Chrome();
         else
             return new Firefox();

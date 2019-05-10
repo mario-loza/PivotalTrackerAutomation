@@ -37,8 +37,9 @@ public class Setup {
 
     private void initialize(){
         JSONParser parser = new JSONParser();
+        String configFile = getClass().getClassLoader().getResource("config.json").getPath();
 
-        try (Reader reader = new FileReader("c:\\github\\roman\\project2\\practica\\src\\test\\resources\\config.json")) {
+        try (Reader reader = new FileReader(configFile)) {
 
             JSONObject jsonObject = (JSONObject) parser.parse(reader);
 

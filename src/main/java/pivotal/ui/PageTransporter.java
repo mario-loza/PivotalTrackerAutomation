@@ -9,7 +9,7 @@ import java.net.URL;
 
 public class PageTransporter {
 
-    private String baseURL = Setup.getInstance().urlBasePath;//"https://www.pivotaltracker.com/";
+    private String baseURL = Setup.getInstance().urlBasePath;
     private WebDriver webDriver;
 
     private static PageTransporter instance;
