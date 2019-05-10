@@ -1,8 +1,9 @@
 Feature:  Project management
+  Background:
+    Given I log in with username "melvi.caballero@gmail.com" and password "control123*"
 
   @Project
   Scenario: Create a new project the first time
-    Given I log in with username "melvi.caballero@gmail.com" and password "control123*"
     When I navigate to Introduction page
     And I create a new Project from Introduction page with the name "First Project"
     Then the Project page should be displayed the project name
@@ -15,10 +16,9 @@ Feature:  Project management
 
 
   Scenario: Create a new project when user has at least 1 project
-    Given I log in with username "melvi.caballero@gmail.com" and password "control123*"
     When I navigate to Project Dashboard page
     And I create a new Project from Project Dashboard page with the following values
-      | Project Name  |Test Project1|
+      | Project Name  |Test Project|
       | Account       |Untitled     |
       |Project Privacy|Private      |
     Then the Project page should be displayed the project name
@@ -31,7 +31,6 @@ Feature:  Project management
 
 
   Scenario: Create a new project when user has at least one project from project page
-    Given I log in with username "melvi.caballero@gmail.com" and password "control123*"
     When I navigate to Projects page
     And I create a new Project from Projects page with the following values
       | Project Name  |Test Project2|
@@ -47,10 +46,9 @@ Feature:  Project management
 
 
   Scenario: Create a new project when user has at least one project from the top bar's projects DropDown Panel
-    Given I log in with username "melvi.caballero@gmail.com" and password "control123*"
     When I navigate to Project Dashboard page
     And I create a new Project from the Projects panel from the top bar with the following values
-      | Project Name  |Test Project3|
+      | Project Name  |Test Project12|
       | Account       |Untitled     |
       |Project Privacy|Private      |
     Then the Project page should be displayed the project name

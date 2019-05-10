@@ -71,7 +71,7 @@ public class ProjectSteps {
     }
 
     @Then("^the Project page should be displayed the project name$")
-    public void IsDisplayedProjectNameInProjectPage() {
+    public void isDisplayedProjectNameInProjectPage() {
         topBarProject = new TopBarProject();
         Assert.assertEquals(topBarProject.GetCurrentProjectName(), project.getName());
     }
