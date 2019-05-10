@@ -1,8 +1,8 @@
 package steps;
 
 import cucumber.api.java.en.Given;
-import pivotal.ui.LoginPage;
-import pivotal.ui.PageTransporter;
+import pivotal.ui.pages.LoginPage;
+import pivotal.ui.pages.PageTransporter;
 
 public class LoginSteps {
     PageTransporter pageTransporter = PageTransporter.getInstance();

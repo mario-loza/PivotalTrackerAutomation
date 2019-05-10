@@ -1,14 +1,12 @@
-package pivotal.ui;
+package pivotal.ui.components;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import pivotal.ui.ProjectsDropDownPanel;
+import pivotal.ui.pages.BasePage;
 
-import java.util.List;
-import java.util.concurrent.TimeUnit;
-
-public class TopBar extends BasePage{
+public class TopBar extends BasePage {
 
     @FindBy(xpath="//button[@class=\"tc_projects_dropdown_link tc_context_name\"]")
     private WebElement projectDropdownbutton;

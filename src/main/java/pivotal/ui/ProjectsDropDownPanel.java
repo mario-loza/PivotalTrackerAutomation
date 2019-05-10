@@ -4,11 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import pivotal.ui.pages.BasePage;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class ProjectsDropDownPanel extends BasePage{
+public class ProjectsDropDownPanel extends BasePage {
 
     @FindBy(xpath = "//a[contains(text(),\"Create Project\")]")
     private WebElement createProjectLink;

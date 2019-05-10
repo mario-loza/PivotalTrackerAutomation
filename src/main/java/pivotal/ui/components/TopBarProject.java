@@ -1,8 +1,10 @@
-package pivotal.ui;
+package pivotal.ui.components;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import pivotal.ui.components.TopBar;
+
 import java.time.Duration;
 
 public class TopBarProject extends TopBar {

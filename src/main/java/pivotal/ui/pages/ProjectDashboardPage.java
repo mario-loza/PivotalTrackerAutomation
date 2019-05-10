@@ -1,13 +1,14 @@
-package pivotal.ui;
+package pivotal.ui.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import pivotal.ui.CreateProjectPopup;
 
 import java.util.List;
 
-public class ProjectDashboardPage extends BasePage{
+public class ProjectDashboardPage extends BasePage {
    // private static final ACCOUNT_SELECTOR="//a[@data-aid=\"project-name\" and text()=\""+projectName+"\"]";
 
     @FindBy(id = "create-project-button")

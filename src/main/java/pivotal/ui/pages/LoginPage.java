@@ -1,9 +1,9 @@
-package pivotal.ui;
+package pivotal.ui.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import pivotal.ui.pages.BasePage;
 
 /**
  * Created by Yesica on 07/05/2019.

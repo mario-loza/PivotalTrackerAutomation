@@ -1,11 +1,9 @@
-package pivotal.ui;
+package pivotal.ui.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class IntroductionPage extends BasePage {

@@ -2,8 +2,9 @@ package pivotal.ui;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import pivotal.entities.Project;
+import pivotal.ui.pages.BasePage;
 
 import java.util.concurrent.TimeUnit;
 
@@ -59,12 +60,11 @@ public class CreateProjectPopup extends BasePage {
         createButton.click();
     }
 
-    public void createNewProject(String projectName, String account, String typeProject){
-        setProjectNameTextBox(projectName);
+    public void createNewProject(Project project){
+        setProjectNameTextBox(project.getName());
         pressAccountDropdown();
-
         selectaccountDropdownFirstOption();
-        if(typeProject.equals("Public")){
+        if(project.getPrivacy().equals("Public")){
             setProjectTypePublic();
         }
         else {
@@ -74,6 +74,5 @@ public class CreateProjectPopup extends BasePage {
 
         wait.withTimeout( 10, TimeUnit.SECONDS).until(ExpectedConditions.urlContains("/n/projects"));
     }
-
 
 }
