@@ -1,4 +1,4 @@
-package pivotal.ui;
+package pivotal.ui.components;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -28,51 +28,64 @@ public class CreateProjectPopup extends BasePage {
     @FindBy(xpath = "//button[text()=\"Create\"]")
     private WebElement createButton;
 
+    @FindBy(xpath = "//span[text()=\"The project name you entered is already taken.\"]")
+    private WebElement errorMessage;
+
+
     @Override
     public void waitUntilPageObjectIsLoaded() {
 
     }
 
-    public void setProjectNameTextBox (String projectName) {
+    public void setProjectNameTextBox(String projectName) {
 
         projectNameTextBox.sendKeys(projectName);
     }
 
-    public void pressAccountDropdown(){
+    public void pressAccountDropdown() {
         accountDropDown.click();
     }
 
-    public void selectaccountDropdownFirstOption(){
+    public void selectaccountDropdownFirstOption() {
 
-        wait.withTimeout( 2, TimeUnit.SECONDS).until(ExpectedConditions.elementToBeClickable(getAccountDropDownFirstOption));
+        wait.withTimeout(2, TimeUnit.SECONDS).until(ExpectedConditions.elementToBeClickable(getAccountDropDownFirstOption));
         getAccountDropDownFirstOption.click();
     }
 
-    public void setProjectTypePublic(){
+    public void setProjectTypePublic() {
         projectTypePublic.click();
     }
 
-    public void setProjectTypePrivate(){
+    public void setProjectTypePrivate() {
         projectTypePrivate.click();
     }
 
-    public void pressCreateButton(){
+    public void pressCreateButton() {
         createButton.click();
     }
 
-    public void createNewProject(Project project){
+    public boolean isErrorMessage() {
+        try {
+            wait.withTimeout(2, TimeUnit.SECONDS).until(ExpectedConditions.visibilityOf(errorMessage));
+        } catch (Exception e) {
+            return false;
+        }
+        return true;
+    }
+
+    public void createNewProject(Project project, Boolean waitSuccess) {
         setProjectNameTextBox(project.getName());
         pressAccountDropdown();
         selectaccountDropdownFirstOption();
-        if(project.getPrivacy().equals("Public")){
+        if (project.getPrivacy().equals("Public")) {
             setProjectTypePublic();
-        }
-        else {
+        } else {
             setProjectTypePrivate();
         }
         pressCreateButton();
-
-        wait.withTimeout( 10, TimeUnit.SECONDS).until(ExpectedConditions.urlContains("/n/projects"));
+        if (waitSuccess) {
+            wait.withTimeout(10, TimeUnit.SECONDS).until(ExpectedConditions.urlContains("/n/projects"));
+        }
     }
 
 }

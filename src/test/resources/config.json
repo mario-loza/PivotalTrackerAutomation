@@ -1,4 +1,7 @@
 {
   "basePath" : "https://www.pivotaltracker.com/",
-  "browser" : "Chrome"
+  "browser" : "Chrome",
+  "username" : "melvi.caballero@gmail.com",
+  "password" : "control123*",
+  "token" : "3479ea45399b9832f2dd04a49a55a79f"
 }

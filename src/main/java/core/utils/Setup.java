@@ -34,6 +34,9 @@ public class Setup {
 
     public String urlBasePath;
     public String browser;
+    public String username;
+    public String password;
+    public String token;
 
     private void initialize(){
         JSONParser parser = new JSONParser();
@@ -45,7 +48,9 @@ public class Setup {
 
             urlBasePath = (String) jsonObject.get("basePath");
             browser = (String) jsonObject.get("browser");
-
+            username = (String) jsonObject.get("username");
+            password = (String) jsonObject.get("password");
+            token = (String) jsonObject.get("token");
 
         } catch (IOException e) {
             e.printStackTrace();

@@ -1,33 +1,26 @@
 package steps;
 
 import core.selenium.WebDriverManager;
-import cucumber.api.DataTable;
+import core.utils.RestClient;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import cucumber.api.java.en.And;
 import org.junit.Assert;
+import org.testng.annotations.BeforeTest;
 import pivotal.entities.Project;
-import pivotal.ui.*;
-import pivotal.ui.components.TopBar;
-import pivotal.ui.components.TopBarProject;
+import pivotal.ui.components.*;
 import pivotal.ui.pages.IntroductionPage;
 import pivotal.ui.pages.PageTransporter;
 import pivotal.ui.pages.ProjectDashboardPage;
 import pivotal.ui.pages.ProjectsPage;
 
-import java.util.List;
 import java.util.Map;
 
 public class ProjectSteps {
 
-    private Project project;
-
-    public ProjectSteps(Project project) {
-        this.project = project;
-    }
-
     PageTransporter pageTransporter = PageTransporter.getInstance();
-
     //pages
     ProjectDashboardPage projectDashboardPage;
     CreateProjectPopup createProjectPopup;
@@ -35,7 +28,12 @@ public class ProjectSteps {
     TopBar topBar;
     TopBarProject topBarProject;
     ProjectsDropDownPanel projectsDropDownPanel;
+    AccountPanel accountPanel;
     IntroductionPage introductionPage;
+    private Project project;
+    public ProjectSteps(Project project) {
+        this.project = project;
+    }
 
     @When("^I navigate to Project Dashboard page$")
     public void navigateToProjectDashboardPage() {
@@ -47,7 +45,15 @@ public class ProjectSteps {
         project.setInformation(projectInformation);
 
         createProjectPopup = projectDashboardPage.pressCreateProjectButton();
-        createProjectPopup.createNewProject(project);
+        createProjectPopup.createNewProject(project, Boolean.TRUE);
+    }
+
+    @And("^I create a new Project from Project Dashboard page with a duplicate project name$")
+    public void createDuplicateProjectNameFromProjectDashboard(Map<String, String> projectInformation) {
+        project.setInformation(projectInformation);
+
+        createProjectPopup = projectDashboardPage.pressCreateProjectButton();
+        createProjectPopup.createNewProject(project, Boolean.FALSE);
     }
 
     @And("^I create a new Project from Projects page with the following values$")
@@ -55,9 +61,9 @@ public class ProjectSteps {
         project.setInformation(projectInformation);
 
         topBar = new TopBar();
-        projectsDropDownPanel = topBar.PressProjectDropdownbutton();
+        projectsDropDownPanel = topBar.pressProjectButton();
         createProjectPopup = projectsDropDownPanel.pressCreateProjectLink();
-        createProjectPopup.createNewProject(project);
+        createProjectPopup.createNewProject(project, Boolean.TRUE);
     }
 
     @And("^I create a new Project from the Projects panel from the top bar with the following values$")
@@ -65,9 +71,9 @@ public class ProjectSteps {
         project.setInformation(projectInformation);
 
         topBar = new TopBar();
-        projectsDropDownPanel = topBar.PressProjectDropdownbutton();
+        projectsDropDownPanel = topBar.pressProjectButton();
         createProjectPopup = projectsDropDownPanel.pressCreateProjectLink();
-        createProjectPopup.createNewProject(project);
+        createProjectPopup.createNewProject(project, Boolean.TRUE);
     }
 
     @Then("^the Project page should be displayed the project name$")
@@ -87,14 +93,14 @@ public class ProjectSteps {
     }
 
     @Then("^the Projects page should be displayed the Project name$")
-    public void verifyIsProjectDisplayedInProjectPage () {
+    public void verifyIsProjectDisplayedInProjectPage() {
         Assert.assertTrue(projectsPage.projectNameIsListed(project.getName()));
     }
 
     @When("^I display the Projects panel from the top bar$")
     public void displayToProjectsMenuFromTopBar() {
         topBar = new TopBar();
-        projectsDropDownPanel = topBar.PressProjectDropdownbutton();
+        projectsDropDownPanel = topBar.pressProjectButton();
     }
 
     @Then("^the Projects panel should be displayed the Project name$")
@@ -113,13 +119,39 @@ public class ProjectSteps {
         this.project.setName(projectName);
     }
 
-//    @When("^I navigate to Projects Drop Down Panel$")
-//    public void navigateToProjectsDropDownPanel() {
-//        projectsDropDownPanel = pageTransporter.navigateToProjectsDropDownPanel();
+    @When("^sign out of the application$")
+    public void displayToAccountPanelFromTopBar() {
+        topBar = new TopBar();
+        accountPanel = topBar.pressAccountPanelLink();
+        accountPanel.pressSignOutLink();
+    }
+
+    @Then("^verify that the error message is displayed$")
+    public void verifyErrorMessage(){
+        Assert.assertTrue(createProjectPopup.isErrorMessage());
+    }
+
+    @Before(order=1, value="@deleteAllProject")
+    public void beforeScenario() {
+        RestClient rc = new RestClient();
+        rc.deleteAllProjects();
+    }
+
+//    @After("@finalScenario")
+//    public void clearcookies() {
+//        WebDriverManager.getInstance().getWebDriver().manage().deleteAllCookies();
 //    }
-//
-//    @And("^close the application$")
-//    public void closeTheApplication() {
-//        WebDriverManager.getInstance().getWebDriver().close();
-//    }
+
+    @After("@finalScenario")
+    public void closeTheApplication() {
+        WebDriverManager.getInstance().getWebDriver().close();
+    }
+
+    @Before(order=2,value="@createProject")
+    public void createProject() {
+        // WebDriverManager.getInstance().getWebDriver().close();
+        RestClient rc = new RestClient();
+        rc.createProject("Test Project");
+    }
+
 }

@@ -3,7 +3,7 @@ package pivotal.ui.pages;
 import core.selenium.WebDriverManager;
 import core.utils.Setup;
 import org.openqa.selenium.WebDriver;
-import pivotal.ui.ProjectsDropDownPanel;
+import pivotal.ui.components.ProjectsDropDownPanel;
 
 import java.net.MalformedURLException;
 import java.net.URL;
