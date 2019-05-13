@@ -7,11 +7,19 @@ import pivotal.ui.pages.LoginPage;
 
 import java.time.Duration;
 
+/**
+ * Created by Melvi Caballero.
+ * Class to Account panel of pivotal tracker.
+ */
 public class AccountPanel extends TopBar{
 
     @FindBy(xpath = "//button[text()=\"Sign Out\"]")
     private WebElement signOut;
 
+    /**
+     * This method did a press over Sign Out Link.
+     * @return The login page.
+     */
     public LoginPage pressSignOutLink() {
         signOut.click();
         return new LoginPage();

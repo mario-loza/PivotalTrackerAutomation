@@ -4,32 +4,42 @@ import org.glassfish.jersey.client.authentication.HttpAuthenticationFeature;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
-import javax.ws.rs.core.GenericType;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ * Created by Melvi Caballero.
+ * Class to connect to API test of Pivotal Tracker and use the command
+ * Post, get, and delete.
+ */
 public class RestClient {
     private static final String REST_URI
             = "https://www.pivotaltracker.com/services/v5/";
-    String token = "3479ea45399b9832f2dd04a49a55a79f";
+    String token = "cd4715309620eea692d2cc5bb9345990";
 
     private Client client;
 
-    public RestClient(){
+    /**
+     *
+     */
+    public RestClient() {
         client = ClientBuilder.newClient();
-        HttpAuthenticationFeature feature = HttpAuthenticationFeature.basic(Setup.getInstance().username,Setup.getInstance().password);
+        HttpAuthenticationFeature feature = HttpAuthenticationFeature.basic(Setup.getInstance().username, Setup.getInstance().password);
         client.register(feature);
     }
 
+    /**
+     * This method is for delete project used a API delete method.
+     * @param id of project
+     */
     public void deleteProject(Long id) {
-         client
+        client
                 .target(REST_URI)
                 .path("projects")
                 .path(String.valueOf(id))
@@ -38,6 +48,10 @@ public class RestClient {
                 .delete();
     }
 
+    /**
+     * List all project with API method get.
+     * @return result is Id of projects.
+     */
     public List<Long> getAllProjects() {
         List<Long> results = new ArrayList<>();
 
@@ -47,33 +61,38 @@ public class RestClient {
                 .request(MediaType.APPLICATION_JSON)
                 .header("X-TrackerToken", Setup.getInstance().token)
                 .get();
-        String listString= response.readEntity(String.class);
+        String listString = response.readEntity(String.class);
 
         JSONParser parser = new JSONParser();
-        try{
-            JSONArray  projects = (JSONArray) parser.parse(listString);
+        try {
+            JSONArray projects = (JSONArray) parser.parse(listString);
             Iterator<JSONObject> iterator = projects.iterator();
-             // iterate through json array
+            // iterate through json array
             while (iterator.hasNext()) {
                 // do something. Fetch fields in services array.
-                results.add((Long)(iterator.next().get("id")));
+                results.add((Long) (iterator.next().get("id")));
             }
-        }catch (Exception e){
-          System.out.println(e.getMessage());
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
-
         return results;
     }
 
-    public void deleteAllProjects(){
-        List<Long>  projects= getAllProjects();
+    /**
+     * This method delete all project of pivotal tracker.
+     */
+    public void deleteAllProjects() {
+        List<Long> projects = getAllProjects();
 
-        for(Long id : projects){
+        for (Long id : projects) {
             deleteProject(id);
         }
-
     }
 
+    /**
+     * This method is for Create a new project.
+     * @param name the project name to it has been created.
+     */
     public void createProject(String name) {
         Project project = new Project();
         project.setId(0);
@@ -84,29 +103,48 @@ public class RestClient {
                 .path("projects")
                 .request(MediaType.APPLICATION_JSON)
                 .header("X-TrackerToken", Setup.getInstance().token)
-                .post(Entity.json("{ \"name\" : \""+name+"\"}"));
+                .post(Entity.json("{ \"name\" : \"" + name + "\"}"));
     }
 
-public class Project{
+    /**
+     * Project with the main attributes getters and setters.
+     */
+    public class Project {
         private int id;
         private String name;
 
-    public int getId() {
-        return id;
-    }
+        /**
+         * Gets project id for the test.
+         * @return project id.
+         */
+        public int getId() {
+            return id;
+        }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+        /**
+         * Sets project id for the test.
+         * @param id is project id.
+         */
+        public void setId(int id) {
+            this.id = id;
+        }
 
-    public String getName() {
-        return name;
-    }
+        /**
+         * Get the project name for the test.
+         * @return project name.
+         */
+        public String getName() {
+            return name;
+        }
 
-    public void setName(String name) {
-        this.name = name;
+        /**
+         * Set the project name for the test.
+         * @param name is project name.
+         */
+        public void setName(String name) {
+            this.name = name;
+        }
     }
 }
 
-}
 

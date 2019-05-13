@@ -7,11 +7,19 @@ import pivotal.ui.components.TopBar;
 
 import java.time.Duration;
 
+/**
+ * Created by Melvi Caballero.
+ * Class to Top Bar project component.
+ */
 public class TopBarProject extends TopBar {
 
     @FindBy(xpath="//span[@class=\"raw_context_name\"]")
     protected WebElement projectName;
 
+    /**
+     * Get the current Project Name.
+     * @return the project name.
+     */
     public String GetCurrentProjectName(){
         return projectName.getText();
     }

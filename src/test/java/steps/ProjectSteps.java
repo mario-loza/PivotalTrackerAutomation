@@ -18,6 +18,10 @@ import pivotal.ui.pages.ProjectsPage;
 
 import java.util.Map;
 
+/**
+ * Created by Melvi Caballero.
+ * Class to To project steps.
+ */
 public class ProjectSteps {
 
     PageTransporter pageTransporter = PageTransporter.getInstance();
