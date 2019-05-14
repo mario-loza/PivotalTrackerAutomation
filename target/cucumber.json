@@ -1,1 +1,1031 @@
-[]
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8496527354,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I log in with username \"melvi.caballero@fundacion-jala.org\" and password \"control123*\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "melvi.caballero@fundacion-jala.org",
+                  "offset": 24
+                },
+                {
+                  "val": "control123*",
+                  "offset": 74
+                }
+              ],
+              "location": "LoginSteps.LogIn(String,String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7193404063,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProjectSteps.beforeScenario()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Create a new project the first time",
+        "description": "",
+        "id": "project-management;create-a-new-project-the-first-time",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 653651035,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I navigate to Introduction page",
+            "match": {
+              "location": "ProjectSteps.navigateToIntroductionPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5707731981,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I create a new Project from Introduction page with the name \"First Project\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "First Project",
+                  "offset": 61
+                }
+              ],
+              "location": "ProjectSteps.createFirstProjectFromIntroductionPage(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 89686340,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the Project page should be displayed the project name",
+            "match": {
+              "location": "ProjectSteps.isDisplayedProjectNameInProjectPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1286164115,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I navigate to Project Dashboard page",
+            "match": {
+              "location": "ProjectSteps.navigateToProjectDashboardPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27647194,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the Dashboard page should be displayed the Project name",
+            "match": {
+              "location": "ProjectSteps.verifyIsProjectDisplayedInDashboardPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1129911689,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I navigate to Projects page",
+            "match": {
+              "location": "ProjectSteps.navigateToProjectsPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21878651,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the Projects page should be displayed the Project name",
+            "match": {
+              "location": "ProjectSteps.verifyIsProjectDisplayedInProjectPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 196449189,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I display the Projects panel from the top bar",
+            "match": {
+              "location": "ProjectSteps.displayToProjectsMenuFromTopBar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23421907,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the Projects panel should be displayed the Project name",
+            "match": {
+              "location": "ProjectSteps.verifyIsProjectDisplayedInProjectsPanel()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 680235828,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I navigate to Project Dashboard page",
+            "match": {
+              "location": "ProjectSteps.navigateToProjectDashboardPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1018866805,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "sign out of the application",
+            "match": {
+              "location": "ProjectSteps.displayToAccountPanelFromTopBar()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@deleteAllProject"
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2455932511,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I log in with username \"melvi.caballero@fundacion-jala.org\" and password \"control123*\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "melvi.caballero@fundacion-jala.org",
+                  "offset": 24
+                },
+                {
+                  "val": "control123*",
+                  "offset": 74
+                }
+              ],
+              "location": "LoginSteps.LogIn(String,String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 892474270,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProjectSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 949338367,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProjectSteps.createProject()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Create a new project when user has at least 1 project",
+        "description": "",
+        "id": "project-management;create-a-new-project-when-user-has-at-least-1-project",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 735731602,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I navigate to Project Dashboard page",
+            "match": {
+              "location": "ProjectSteps.navigateToProjectDashboardPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2604502365,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I create a new Project from Project Dashboard page with the following values",
+            "match": {
+              "location": "ProjectSteps.createProjectFromProjectDashboard(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Project Name",
+                  "Test Project1"
+                ],
+                "line": 23
+              },
+              {
+                "cells": [
+                  "Account",
+                  "Untitled"
+                ],
+                "line": 24
+              },
+              {
+                "cells": [
+                  "Project Privacy",
+                  "Private"
+                ],
+                "line": 25
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 555655775,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "the Project page should be displayed the project name",
+            "match": {
+              "location": "ProjectSteps.isDisplayedProjectNameInProjectPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 964572526,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I navigate to Project Dashboard page",
+            "match": {
+              "location": "ProjectSteps.navigateToProjectDashboardPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22865959,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the Dashboard page should be displayed the Project name",
+            "match": {
+              "location": "ProjectSteps.verifyIsProjectDisplayedInDashboardPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 765046212,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I navigate to Projects page",
+            "match": {
+              "location": "ProjectSteps.navigateToProjectsPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20409208,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the Projects page should be displayed the Project name",
+            "match": {
+              "location": "ProjectSteps.verifyIsProjectDisplayedInProjectPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 157922830,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I display the Projects panel from the top bar",
+            "match": {
+              "location": "ProjectSteps.displayToProjectsMenuFromTopBar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20148514,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "the Projects panel should be displayed the Project name",
+            "match": {
+              "location": "ProjectSteps.verifyIsProjectDisplayedInProjectsPanel()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 692298142,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I navigate to Project Dashboard page",
+            "match": {
+              "location": "ProjectSteps.navigateToProjectDashboardPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 996401487,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "sign out of the application",
+            "match": {
+              "location": "ProjectSteps.displayToAccountPanelFromTopBar()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@deleteAllProject"
+          },
+          {
+            "line": 19,
+            "name": "@createProject"
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2385645032,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I log in with username \"melvi.caballero@fundacion-jala.org\" and password \"control123*\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "melvi.caballero@fundacion-jala.org",
+                  "offset": 24
+                },
+                {
+                  "val": "control123*",
+                  "offset": 74
+                }
+              ],
+              "location": "LoginSteps.LogIn(String,String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1336478014,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProjectSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 751929177,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProjectSteps.createProject()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Create a new project when user has at least one project from project page",
+        "description": "",
+        "id": "project-management;create-a-new-project-when-user-has-at-least-one-project-from-project-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 701102423,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I navigate to Projects page",
+            "match": {
+              "location": "ProjectSteps.navigateToProjectsPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2224095529,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I create a new Project from Projects page with the following values",
+            "match": {
+              "location": "ProjectSteps.createProjectFromProyectsPage(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Project Name",
+                  "Test Project2"
+                ],
+                "line": 40
+              },
+              {
+                "cells": [
+                  "Account",
+                  "Untitled"
+                ],
+                "line": 41
+              },
+              {
+                "cells": [
+                  "Project Privacy",
+                  "Private"
+                ],
+                "line": 42
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 617655668,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "the Project page should be displayed the project name",
+            "match": {
+              "location": "ProjectSteps.isDisplayedProjectNameInProjectPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 759103588,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I navigate to Project Dashboard page",
+            "match": {
+              "location": "ProjectSteps.navigateToProjectDashboardPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19946274,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "the Dashboard page should be displayed the Project name",
+            "match": {
+              "location": "ProjectSteps.verifyIsProjectDisplayedInDashboardPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 704636509,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I navigate to Projects page",
+            "match": {
+              "location": "ProjectSteps.navigateToProjectsPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22740945,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "the Projects page should be displayed the Project name",
+            "match": {
+              "location": "ProjectSteps.verifyIsProjectDisplayedInProjectPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 196621988,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I display the Projects panel from the top bar",
+            "match": {
+              "location": "ProjectSteps.displayToProjectsMenuFromTopBar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22159824,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "the Projects panel should be displayed the Project name",
+            "match": {
+              "location": "ProjectSteps.verifyIsProjectDisplayedInProjectsPanel()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 764965572,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I navigate to Project Dashboard page",
+            "match": {
+              "location": "ProjectSteps.navigateToProjectDashboardPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1058892474,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "sign out of the application",
+            "match": {
+              "location": "ProjectSteps.displayToAccountPanelFromTopBar()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 36,
+            "name": "@deleteAllProject"
+          },
+          {
+            "line": 36,
+            "name": "@createProject"
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2350398891,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I log in with username \"melvi.caballero@fundacion-jala.org\" and password \"control123*\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "melvi.caballero@fundacion-jala.org",
+                  "offset": 24
+                },
+                {
+                  "val": "control123*",
+                  "offset": 74
+                }
+              ],
+              "location": "LoginSteps.LogIn(String,String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1261532606,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProjectSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 727474308,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProjectSteps.createProject()"
+            }
+          }
+        ],
+        "line": 54,
+        "name": "Create a new project when user has at least one project from the top bar\u0027s projects DropDown Panel",
+        "description": "",
+        "id": "project-management;create-a-new-project-when-user-has-at-least-one-project-from-the-top-bar\u0027s-projects-dropdown-panel",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 714773274,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I navigate to Project Dashboard page",
+            "match": {
+              "location": "ProjectSteps.navigateToProjectDashboardPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2205771445,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "I create a new Project from the Projects panel from the top bar with the following values",
+            "match": {
+              "location": "ProjectSteps.createProjectFromProjectsPanel(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Project Name",
+                  "Test Project3"
+                ],
+                "line": 57
+              },
+              {
+                "cells": [
+                  "Account",
+                  "Untitled"
+                ],
+                "line": 58
+              },
+              {
+                "cells": [
+                  "Project Privacy",
+                  "Private"
+                ],
+                "line": 59
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 658203150,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "the Project page should be displayed the project name",
+            "match": {
+              "location": "ProjectSteps.isDisplayedProjectNameInProjectPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 857499490,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "I navigate to Project Dashboard page",
+            "match": {
+              "location": "ProjectSteps.navigateToProjectDashboardPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22295504,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "the Dashboard page should be displayed the Project name",
+            "match": {
+              "location": "ProjectSteps.verifyIsProjectDisplayedInDashboardPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 760144658,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "I navigate to Projects page",
+            "match": {
+              "location": "ProjectSteps.navigateToProjectsPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23281533,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "the Projects page should be displayed the Project name",
+            "match": {
+              "location": "ProjectSteps.verifyIsProjectDisplayedInProjectPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 156093280,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "I display the Projects panel from the top bar",
+            "match": {
+              "location": "ProjectSteps.displayToProjectsMenuFromTopBar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21539877,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "the Projects panel should be displayed the Project name",
+            "match": {
+              "location": "ProjectSteps.verifyIsProjectDisplayedInProjectsPanel()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 695485773,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "I navigate to Project Dashboard page",
+            "match": {
+              "location": "ProjectSteps.navigateToProjectDashboardPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1049660245,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "sign out of the application",
+            "match": {
+              "location": "ProjectSteps.displayToAccountPanelFromTopBar()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 53,
+            "name": "@deleteAllProject"
+          },
+          {
+            "line": 53,
+            "name": "@createProject"
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2324757888,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I log in with username \"melvi.caballero@fundacion-jala.org\" and password \"control123*\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "melvi.caballero@fundacion-jala.org",
+                  "offset": 24
+                },
+                {
+                  "val": "control123*",
+                  "offset": 74
+                }
+              ],
+              "location": "LoginSteps.LogIn(String,String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1268090484,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProjectSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1095649443,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProjectSteps.createProject()"
+            }
+          }
+        ],
+        "line": 71,
+        "name": "Create a new project with a duplicate project name",
+        "description": "",
+        "id": "project-management;create-a-new-project-with-a-duplicate-project-name",
+        "after": [
+          {
+            "result": {
+              "duration": 95798350,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProjectSteps.closeTheApplication()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 752514138,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "I navigate to Project Dashboard page",
+            "match": {
+              "location": "ProjectSteps.navigateToProjectDashboardPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 655716959,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "I create a new Project from Project Dashboard page with a duplicate project name",
+            "match": {
+              "location": "ProjectSteps.createDuplicateProjectNameFromProjectDashboard(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Project Name",
+                  "Test Project"
+                ],
+                "line": 74
+              },
+              {
+                "cells": [
+                  "Account",
+                  "Untitled"
+                ],
+                "line": 75
+              },
+              {
+                "cells": [
+                  "Project Privacy",
+                  "Private"
+                ],
+                "line": 76
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 291396337,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "verify that the error message is displayed",
+            "match": {
+              "location": "ProjectSteps.verifyErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 70,
+            "name": "@deleteAllProject"
+          },
+          {
+            "line": 70,
+            "name": "@finalScenario"
+          },
+          {
+            "line": 70,
+            "name": "@createProject"
+          }
+        ]
+      }
+    ],
+    "name": "Project management",
+    "description": "",
+    "id": "project-management",
+    "keyword": "Feature",
+    "uri": "src/test/resources/feature/project.feature"
+  }
+]
