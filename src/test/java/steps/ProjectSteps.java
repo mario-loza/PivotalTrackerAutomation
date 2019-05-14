@@ -1,14 +1,9 @@
 package steps;
 
-import core.selenium.WebDriverManager;
-import core.utils.RestClient;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import cucumber.api.java.en.And;
 import org.junit.Assert;
-import org.testng.annotations.BeforeTest;
 import pivotal.entities.Project;
 import pivotal.ui.components.*;
 import pivotal.ui.pages.IntroductionPage;
@@ -20,7 +15,7 @@ import java.util.Map;
 
 /**
  * Created by Melvi Caballero.
- * Class to To project steps.
+ * Class to project steps.
  */
 public class ProjectSteps {
 
@@ -34,6 +29,7 @@ public class ProjectSteps {
     ProjectsDropDownPanel projectsDropDownPanel;
     AccountPanel accountPanel;
     IntroductionPage introductionPage;
+    //DI (Dependency Injection)
     private Project project;
     public ProjectSteps(Project project) {
         this.project = project;
@@ -133,29 +129,6 @@ public class ProjectSteps {
     @Then("^verify that the error message is displayed$")
     public void verifyErrorMessage(){
         Assert.assertTrue(createProjectPopup.isErrorMessage());
-    }
-
-    @Before(order=1, value="@deleteAllProject")
-    public void beforeScenario() {
-        RestClient rc = new RestClient();
-        rc.deleteAllProjects();
-    }
-
-//    @After("@finalScenario")
-//    public void clearcookies() {
-//        WebDriverManager.getInstance().getWebDriver().manage().deleteAllCookies();
-//    }
-
-    @After("@finalScenario")
-    public void closeTheApplication() {
-        WebDriverManager.getInstance().getWebDriver().close();
-    }
-
-    @Before(order=2,value="@createProject")
-    public void createProject() {
-        // WebDriverManager.getInstance().getWebDriver().close();
-        RestClient rc = new RestClient();
-        rc.createProject("Test Project");
     }
 
 }

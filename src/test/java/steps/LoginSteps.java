@@ -1,5 +1,6 @@
 package steps;
 
+import core.utils.Setup;
 import cucumber.api.java.en.Given;
 import pivotal.ui.pages.LoginPage;
 import pivotal.ui.pages.PageTransporter;
@@ -9,11 +10,9 @@ public class LoginSteps {
 
     //pages.
     private LoginPage loginPage;
-
-    @Given("^I log in with username \"([^\"]*)\" and password \"([^\"]*)\"$")
-    public void LogIn(final String userName, final String password){
+    @Given("^I log in with username and password$")
+    public void LogIn(){
         loginPage = pageTransporter.navigateToLoginPage();
-        loginPage.login(userName, password);
-
+        loginPage.login(Setup.getInstance().username , Setup.getInstance().password);
     }
 }

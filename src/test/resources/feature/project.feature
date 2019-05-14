@@ -1,6 +1,6 @@
-Feature:  Project management
+Feature:  Project management in Pivotal Tracker
   Background:
-    Given I log in with username "melvi.caballero@fundacion-jala.org" and password "control123*"
+    Given I log in with username and password
 
   @deleteAllProject
   Scenario: Create a new project the first time
