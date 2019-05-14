@@ -1,14 +1,10 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/feature/project.feature");
 formatter.feature({
   "line": 1,
-  "name": "Project management",
+  "name": "Project management in Pivotal Tracker",
   "description": "",
-  "id": "project-management",
+  "id": "project-management-in-pivotal-tracker",
   "keyword": "Feature"
-});
-formatter.before({
-  "duration": 7193404063,
-  "status": "passed"
 });
 formatter.background({
   "line": 2,
@@ -19,31 +15,21 @@ formatter.background({
 });
 formatter.step({
   "line": 3,
-  "name": "I log in with username \"melvi.caballero@fundacion-jala.org\" and password \"control123*\"",
+  "name": "I log in with username and password",
   "keyword": "Given "
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "melvi.caballero@fundacion-jala.org",
-      "offset": 24
-    },
-    {
-      "val": "control123*",
-      "offset": 74
-    }
-  ],
-  "location": "LoginSteps.LogIn(String,String)"
+  "location": "LoginSteps.LogIn()"
 });
 formatter.result({
-  "duration": 8496527354,
+  "duration": 42981216500,
   "status": "passed"
 });
 formatter.scenario({
   "line": 6,
   "name": "Create a new project the first time",
   "description": "",
-  "id": "project-management;create-a-new-project-the-first-time",
+  "id": "project-management-in-pivotal-tracker;create-a-new-project-the-first-time",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
@@ -112,7 +98,7 @@ formatter.match({
   "location": "ProjectSteps.navigateToIntroductionPage()"
 });
 formatter.result({
-  "duration": 653651035,
+  "duration": 1301220500,
   "status": "passed"
 });
 formatter.match({
@@ -125,79 +111,63 @@ formatter.match({
   "location": "ProjectSteps.createFirstProjectFromIntroductionPage(String)"
 });
 formatter.result({
-  "duration": 5707731981,
-  "status": "passed"
+  "duration": 170896000,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[@type\u003d\"submit\"]\"}\n  (Session info: chrome\u003d74.0.3729.131)\n  (Driver info: chromedriver\u003d74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform\u003dWindows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027ATO09CMMV01\u0027, ip: \u002710.28.135.30\u0027, os.name: \u0027Windows Server 2012 R2\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\\Users\\ADMINI~1\\AppData\\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62196}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}\nSession ID: d61948f08ab003bffce0a2142d77b5ce\n*** Element info: {Using\u003dxpath, value\u003d//button[@type\u003d\"submit\"]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\r\n\tat pivotal.ui.pages.IntroductionPage.clickCreateProjectBtn(IntroductionPage.java:32)\r\n\tat pivotal.ui.pages.IntroductionPage.firstProject(IntroductionPage.java:25)\r\n\tat steps.ProjectSteps.createFirstProjectFromIntroductionPage(ProjectSteps.java:117)\r\n\tat ✽.And I create a new Project from Introduction page with the name \"First Project\"(src/test/resources/feature/project.feature:8)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "ProjectSteps.isDisplayedProjectNameInProjectPage()"
 });
 formatter.result({
-  "duration": 89686340,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectDashboardPage()"
 });
 formatter.result({
-  "duration": 1286164115,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInDashboardPage()"
 });
 formatter.result({
-  "duration": 27647194,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectsPage()"
 });
 formatter.result({
-  "duration": 1129911689,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInProjectPage()"
 });
 formatter.result({
-  "duration": 21878651,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.displayToProjectsMenuFromTopBar()"
 });
 formatter.result({
-  "duration": 196449189,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInProjectsPanel()"
 });
 formatter.result({
-  "duration": 23421907,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectDashboardPage()"
 });
 formatter.result({
-  "duration": 680235828,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.displayToAccountPanelFromTopBar()"
 });
 formatter.result({
-  "duration": 1018866805,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 892474270,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 949338367,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
   "line": 2,
@@ -208,31 +178,22 @@ formatter.background({
 });
 formatter.step({
   "line": 3,
-  "name": "I log in with username \"melvi.caballero@fundacion-jala.org\" and password \"control123*\"",
+  "name": "I log in with username and password",
   "keyword": "Given "
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "melvi.caballero@fundacion-jala.org",
-      "offset": 24
-    },
-    {
-      "val": "control123*",
-      "offset": 74
-    }
-  ],
-  "location": "LoginSteps.LogIn(String,String)"
+  "location": "LoginSteps.LogIn()"
 });
 formatter.result({
-  "duration": 2455932511,
-  "status": "passed"
+  "duration": 3190918300,
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator \u0027By.id: login_type_check_form\u0027 (tried for 0 second(s) with 0 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat pivotal.ui.pages.LoginPage.waitUntilPageObjectIsLoaded(LoginPage.java:27)\r\n\tat pivotal.ui.pages.BasePage.\u003cinit\u003e(BasePage.java:19)\r\n\tat pivotal.ui.pages.LoginPage.\u003cinit\u003e(LoginPage.java:11)\r\n\tat pivotal.ui.pages.PageTransporter.navigateToLoginPage(PageTransporter.java:61)\r\n\tat steps.LoginSteps.LogIn(LoginSteps.java:15)\r\n\tat ✽.Given I log in with username and password(src/test/resources/feature/project.feature:3)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"id\",\"selector\":\"login_type_check_form\"}\n  (Session info: chrome\u003d74.0.3729.131)\n  (Driver info: chromedriver\u003d74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform\u003dWindows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027ATO09CMMV01\u0027, ip: \u002710.28.135.30\u0027, os.name: \u0027Windows Server 2012 R2\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\\Users\\ADMINI~1\\AppData\\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62196}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}\nSession ID: d61948f08ab003bffce0a2142d77b5ce\n*** Element info: {Using\u003did, value\u003dlogin_type_check_form}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat pivotal.ui.pages.LoginPage.waitUntilPageObjectIsLoaded(LoginPage.java:27)\r\n\tat pivotal.ui.pages.BasePage.\u003cinit\u003e(BasePage.java:19)\r\n\tat pivotal.ui.pages.LoginPage.\u003cinit\u003e(LoginPage.java:11)\r\n\tat pivotal.ui.pages.PageTransporter.navigateToLoginPage(PageTransporter.java:61)\r\n\tat steps.LoginSteps.LogIn(LoginSteps.java:15)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)\r\n\tat cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:643)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)\r\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:782)\r\n\tat org.testng.TestRunner.run(TestRunner.java:632)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:366)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:268)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1169)\r\n\tat org.testng.TestNG.run(TestNG.java:1064)\r\n\tat org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)\r\n\tat org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "line": 20,
   "name": "Create a new project when user has at least 1 project",
   "description": "",
-  "id": "project-management;create-a-new-project-when-user-has-at-least-1-project",
+  "id": "project-management-in-pivotal-tracker;create-a-new-project-when-user-has-at-least-1-project",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
@@ -328,86 +289,67 @@ formatter.match({
   "location": "ProjectSteps.navigateToProjectDashboardPage()"
 });
 formatter.result({
-  "duration": 735731602,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.createProjectFromProjectDashboard(String,String\u003e)"
 });
 formatter.result({
-  "duration": 2604502365,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.isDisplayedProjectNameInProjectPage()"
 });
 formatter.result({
-  "duration": 555655775,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectDashboardPage()"
 });
 formatter.result({
-  "duration": 964572526,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInDashboardPage()"
 });
 formatter.result({
-  "duration": 22865959,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectsPage()"
 });
 formatter.result({
-  "duration": 765046212,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInProjectPage()"
 });
 formatter.result({
-  "duration": 20409208,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.displayToProjectsMenuFromTopBar()"
 });
 formatter.result({
-  "duration": 157922830,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInProjectsPanel()"
 });
 formatter.result({
-  "duration": 20148514,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectDashboardPage()"
 });
 formatter.result({
-  "duration": 692298142,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.displayToAccountPanelFromTopBar()"
 });
 formatter.result({
-  "duration": 996401487,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1336478014,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 751929177,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
   "line": 2,
@@ -418,31 +360,22 @@ formatter.background({
 });
 formatter.step({
   "line": 3,
-  "name": "I log in with username \"melvi.caballero@fundacion-jala.org\" and password \"control123*\"",
+  "name": "I log in with username and password",
   "keyword": "Given "
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "melvi.caballero@fundacion-jala.org",
-      "offset": 24
-    },
-    {
-      "val": "control123*",
-      "offset": 74
-    }
-  ],
-  "location": "LoginSteps.LogIn(String,String)"
+  "location": "LoginSteps.LogIn()"
 });
 formatter.result({
-  "duration": 2385645032,
-  "status": "passed"
+  "duration": 3230053200,
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator \u0027By.id: login_type_check_form\u0027 (tried for 0 second(s) with 0 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat pivotal.ui.pages.LoginPage.waitUntilPageObjectIsLoaded(LoginPage.java:27)\r\n\tat pivotal.ui.pages.BasePage.\u003cinit\u003e(BasePage.java:19)\r\n\tat pivotal.ui.pages.LoginPage.\u003cinit\u003e(LoginPage.java:11)\r\n\tat pivotal.ui.pages.PageTransporter.navigateToLoginPage(PageTransporter.java:61)\r\n\tat steps.LoginSteps.LogIn(LoginSteps.java:15)\r\n\tat ✽.Given I log in with username and password(src/test/resources/feature/project.feature:3)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"id\",\"selector\":\"login_type_check_form\"}\n  (Session info: chrome\u003d74.0.3729.131)\n  (Driver info: chromedriver\u003d74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform\u003dWindows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027ATO09CMMV01\u0027, ip: \u002710.28.135.30\u0027, os.name: \u0027Windows Server 2012 R2\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\\Users\\ADMINI~1\\AppData\\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62196}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}\nSession ID: d61948f08ab003bffce0a2142d77b5ce\n*** Element info: {Using\u003did, value\u003dlogin_type_check_form}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat pivotal.ui.pages.LoginPage.waitUntilPageObjectIsLoaded(LoginPage.java:27)\r\n\tat pivotal.ui.pages.BasePage.\u003cinit\u003e(BasePage.java:19)\r\n\tat pivotal.ui.pages.LoginPage.\u003cinit\u003e(LoginPage.java:11)\r\n\tat pivotal.ui.pages.PageTransporter.navigateToLoginPage(PageTransporter.java:61)\r\n\tat steps.LoginSteps.LogIn(LoginSteps.java:15)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)\r\n\tat cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:643)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)\r\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:782)\r\n\tat org.testng.TestRunner.run(TestRunner.java:632)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:366)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:268)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1169)\r\n\tat org.testng.TestNG.run(TestNG.java:1064)\r\n\tat org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)\r\n\tat org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "line": 37,
   "name": "Create a new project when user has at least one project from project page",
   "description": "",
-  "id": "project-management;create-a-new-project-when-user-has-at-least-one-project-from-project-page",
+  "id": "project-management-in-pivotal-tracker;create-a-new-project-when-user-has-at-least-one-project-from-project-page",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
@@ -538,86 +471,67 @@ formatter.match({
   "location": "ProjectSteps.navigateToProjectsPage()"
 });
 formatter.result({
-  "duration": 701102423,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.createProjectFromProyectsPage(String,String\u003e)"
 });
 formatter.result({
-  "duration": 2224095529,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.isDisplayedProjectNameInProjectPage()"
 });
 formatter.result({
-  "duration": 617655668,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectDashboardPage()"
 });
 formatter.result({
-  "duration": 759103588,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInDashboardPage()"
 });
 formatter.result({
-  "duration": 19946274,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectsPage()"
 });
 formatter.result({
-  "duration": 704636509,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInProjectPage()"
 });
 formatter.result({
-  "duration": 22740945,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.displayToProjectsMenuFromTopBar()"
 });
 formatter.result({
-  "duration": 196621988,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInProjectsPanel()"
 });
 formatter.result({
-  "duration": 22159824,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectDashboardPage()"
 });
 formatter.result({
-  "duration": 764965572,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.displayToAccountPanelFromTopBar()"
 });
 formatter.result({
-  "duration": 1058892474,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1261532606,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 727474308,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
   "line": 2,
@@ -628,31 +542,22 @@ formatter.background({
 });
 formatter.step({
   "line": 3,
-  "name": "I log in with username \"melvi.caballero@fundacion-jala.org\" and password \"control123*\"",
+  "name": "I log in with username and password",
   "keyword": "Given "
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "melvi.caballero@fundacion-jala.org",
-      "offset": 24
-    },
-    {
-      "val": "control123*",
-      "offset": 74
-    }
-  ],
-  "location": "LoginSteps.LogIn(String,String)"
+  "location": "LoginSteps.LogIn()"
 });
 formatter.result({
-  "duration": 2350398891,
-  "status": "passed"
+  "duration": 1590854900,
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator \u0027By.id: login_type_check_form\u0027 (tried for 0 second(s) with 0 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat pivotal.ui.pages.LoginPage.waitUntilPageObjectIsLoaded(LoginPage.java:27)\r\n\tat pivotal.ui.pages.BasePage.\u003cinit\u003e(BasePage.java:19)\r\n\tat pivotal.ui.pages.LoginPage.\u003cinit\u003e(LoginPage.java:11)\r\n\tat pivotal.ui.pages.PageTransporter.navigateToLoginPage(PageTransporter.java:61)\r\n\tat steps.LoginSteps.LogIn(LoginSteps.java:15)\r\n\tat ✽.Given I log in with username and password(src/test/resources/feature/project.feature:3)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"id\",\"selector\":\"login_type_check_form\"}\n  (Session info: chrome\u003d74.0.3729.131)\n  (Driver info: chromedriver\u003d74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform\u003dWindows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027ATO09CMMV01\u0027, ip: \u002710.28.135.30\u0027, os.name: \u0027Windows Server 2012 R2\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\\Users\\ADMINI~1\\AppData\\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62196}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}\nSession ID: d61948f08ab003bffce0a2142d77b5ce\n*** Element info: {Using\u003did, value\u003dlogin_type_check_form}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat pivotal.ui.pages.LoginPage.waitUntilPageObjectIsLoaded(LoginPage.java:27)\r\n\tat pivotal.ui.pages.BasePage.\u003cinit\u003e(BasePage.java:19)\r\n\tat pivotal.ui.pages.LoginPage.\u003cinit\u003e(LoginPage.java:11)\r\n\tat pivotal.ui.pages.PageTransporter.navigateToLoginPage(PageTransporter.java:61)\r\n\tat steps.LoginSteps.LogIn(LoginSteps.java:15)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)\r\n\tat cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:643)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)\r\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:782)\r\n\tat org.testng.TestRunner.run(TestRunner.java:632)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:366)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:268)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1169)\r\n\tat org.testng.TestNG.run(TestNG.java:1064)\r\n\tat org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)\r\n\tat org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "line": 54,
   "name": "Create a new project when user has at least one project from the top bar\u0027s projects DropDown Panel",
   "description": "",
-  "id": "project-management;create-a-new-project-when-user-has-at-least-one-project-from-the-top-bar\u0027s-projects-dropdown-panel",
+  "id": "project-management-in-pivotal-tracker;create-a-new-project-when-user-has-at-least-one-project-from-the-top-bar\u0027s-projects-dropdown-panel",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
@@ -748,86 +653,67 @@ formatter.match({
   "location": "ProjectSteps.navigateToProjectDashboardPage()"
 });
 formatter.result({
-  "duration": 714773274,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.createProjectFromProjectsPanel(String,String\u003e)"
 });
 formatter.result({
-  "duration": 2205771445,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.isDisplayedProjectNameInProjectPage()"
 });
 formatter.result({
-  "duration": 658203150,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectDashboardPage()"
 });
 formatter.result({
-  "duration": 857499490,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInDashboardPage()"
 });
 formatter.result({
-  "duration": 22295504,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectsPage()"
 });
 formatter.result({
-  "duration": 760144658,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInProjectPage()"
 });
 formatter.result({
-  "duration": 23281533,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.displayToProjectsMenuFromTopBar()"
 });
 formatter.result({
-  "duration": 156093280,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInProjectsPanel()"
 });
 formatter.result({
-  "duration": 21539877,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectDashboardPage()"
 });
 formatter.result({
-  "duration": 695485773,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.displayToAccountPanelFromTopBar()"
 });
 formatter.result({
-  "duration": 1049660245,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1268090484,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1095649443,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
   "line": 2,
@@ -838,31 +724,22 @@ formatter.background({
 });
 formatter.step({
   "line": 3,
-  "name": "I log in with username \"melvi.caballero@fundacion-jala.org\" and password \"control123*\"",
+  "name": "I log in with username and password",
   "keyword": "Given "
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "melvi.caballero@fundacion-jala.org",
-      "offset": 24
-    },
-    {
-      "val": "control123*",
-      "offset": 74
-    }
-  ],
-  "location": "LoginSteps.LogIn(String,String)"
+  "location": "LoginSteps.LogIn()"
 });
 formatter.result({
-  "duration": 2324757888,
-  "status": "passed"
+  "duration": 1898847700,
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator \u0027By.id: login_type_check_form\u0027 (tried for 0 second(s) with 0 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat pivotal.ui.pages.LoginPage.waitUntilPageObjectIsLoaded(LoginPage.java:27)\r\n\tat pivotal.ui.pages.BasePage.\u003cinit\u003e(BasePage.java:19)\r\n\tat pivotal.ui.pages.LoginPage.\u003cinit\u003e(LoginPage.java:11)\r\n\tat pivotal.ui.pages.PageTransporter.navigateToLoginPage(PageTransporter.java:61)\r\n\tat steps.LoginSteps.LogIn(LoginSteps.java:15)\r\n\tat ✽.Given I log in with username and password(src/test/resources/feature/project.feature:3)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"id\",\"selector\":\"login_type_check_form\"}\n  (Session info: chrome\u003d74.0.3729.131)\n  (Driver info: chromedriver\u003d74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform\u003dWindows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027ATO09CMMV01\u0027, ip: \u002710.28.135.30\u0027, os.name: \u0027Windows Server 2012 R2\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\\Users\\ADMINI~1\\AppData\\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62196}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}\nSession ID: d61948f08ab003bffce0a2142d77b5ce\n*** Element info: {Using\u003did, value\u003dlogin_type_check_form}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat pivotal.ui.pages.LoginPage.waitUntilPageObjectIsLoaded(LoginPage.java:27)\r\n\tat pivotal.ui.pages.BasePage.\u003cinit\u003e(BasePage.java:19)\r\n\tat pivotal.ui.pages.LoginPage.\u003cinit\u003e(LoginPage.java:11)\r\n\tat pivotal.ui.pages.PageTransporter.navigateToLoginPage(PageTransporter.java:61)\r\n\tat steps.LoginSteps.LogIn(LoginSteps.java:15)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)\r\n\tat cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:643)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)\r\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:782)\r\n\tat org.testng.TestRunner.run(TestRunner.java:632)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:366)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:268)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1169)\r\n\tat org.testng.TestNG.run(TestNG.java:1064)\r\n\tat org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)\r\n\tat org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "line": 71,
   "name": "Create a new project with a duplicate project name",
   "description": "",
-  "id": "project-management;create-a-new-project-with-a-duplicate-project-name",
+  "id": "project-management-in-pivotal-tracker;create-a-new-project-with-a-duplicate-project-name",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
@@ -922,25 +799,18 @@ formatter.match({
   "location": "ProjectSteps.navigateToProjectDashboardPage()"
 });
 formatter.result({
-  "duration": 752514138,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.createDuplicateProjectNameFromProjectDashboard(String,String\u003e)"
 });
 formatter.result({
-  "duration": 655716959,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ProjectSteps.verifyErrorMessage()"
 });
 formatter.result({
-  "duration": 291396337,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 95798350,
-  "status": "passed"
+  "status": "skipped"
 });
 });

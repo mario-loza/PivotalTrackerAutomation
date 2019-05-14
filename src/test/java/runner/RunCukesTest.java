@@ -17,7 +17,7 @@ import java.util.List;
         glue={"steps"},
         features = {"src/test/resources/feature/project.feature"},
         monochrome = true)
-
+//, "hooks"
 public class RunCukesTest extends AbstractTestNGCucumberTests {
 
     @AfterTest

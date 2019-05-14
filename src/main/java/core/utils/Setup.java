@@ -37,6 +37,8 @@ public class Setup {
     public String browser;
     public String username;
     public String password;
+    
+    public String resturi;
     public String token;
 
     private void initialize(){
@@ -51,6 +53,7 @@ public class Setup {
             browser = (String) jsonObject.get("browser");
             username = (String) jsonObject.get("username");
             password = (String) jsonObject.get("password");
+            resturi = (String) jsonObject.get("resturi");
             token = (String) jsonObject.get("token");
 
         } catch (IOException e) {

@@ -19,9 +19,9 @@ import java.util.List;
  * Post, get, and delete.
  */
 public class RestClient {
-    private static final String REST_URI
-            = "https://www.pivotaltracker.com/services/v5/";
-    String token = "cd4715309620eea692d2cc5bb9345990";
+   // private static final String REST_URI
+  //          = "https://www.pivotaltracker.com/services/v5/";
+   // String token = "cd4715309620eea692d2cc5bb9345990";
 
     private Client client;
 
@@ -40,7 +40,7 @@ public class RestClient {
      */
     public void deleteProject(Long id) {
         client
-                .target(REST_URI)
+                .target(Setup.getInstance().resturi)
                 .path("projects")
                 .path(String.valueOf(id))
                 .request()
@@ -56,7 +56,7 @@ public class RestClient {
         List<Long> results = new ArrayList<>();
 
         Response response = client
-                .target(REST_URI)
+                .target(Setup.getInstance().resturi)
                 .path("projects")
                 .request(MediaType.APPLICATION_JSON)
                 .header("X-TrackerToken", Setup.getInstance().token)
@@ -99,7 +99,7 @@ public class RestClient {
         project.setName(name);
 
         client
-                .target(REST_URI)
+                .target(Setup.getInstance().resturi)
                 .path("projects")
                 .request(MediaType.APPLICATION_JSON)
                 .header("X-TrackerToken", Setup.getInstance().token)

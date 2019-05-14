@@ -11,6 +11,5 @@ public class WebDriverFactory {
             return new Chrome();
         else
             return new Firefox();
-
     }
 }
