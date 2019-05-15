@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 3001041068,
+  "duration": 1976133953,
   "status": "passed"
 });
 formatter.background({
@@ -26,7 +26,7 @@ formatter.match({
   "location": "LoginSteps.LogIn()"
 });
 formatter.result({
-  "duration": 22606453424,
+  "duration": 13822051261,
   "status": "passed"
 });
 formatter.scenario({
@@ -102,7 +102,7 @@ formatter.match({
   "location": "ProjectSteps.navigateToIntroductionPage()"
 });
 formatter.result({
-  "duration": 956767963,
+  "duration": 664240353,
   "status": "passed"
 });
 formatter.match({
@@ -115,82 +115,82 @@ formatter.match({
   "location": "ProjectSteps.createFirstProjectFromIntroductionPage(String)"
 });
 formatter.result({
-  "duration": 11607257265,
+  "duration": 6088198475,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.isDisplayedProjectNameInProjectPage()"
 });
 formatter.result({
-  "duration": 83069937,
+  "duration": 111260255,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectDashboardPage()"
 });
 formatter.result({
-  "duration": 977699394,
+  "duration": 1032834161,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInDashboardPage()"
 });
 formatter.result({
-  "duration": 27845997,
+  "duration": 26872769,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectsPage()"
 });
 formatter.result({
-  "duration": 1543362171,
+  "duration": 1240577486,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInProjectPage()"
 });
 formatter.result({
-  "duration": 23262313,
+  "duration": 22148712,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.displayToProjectsMenuFromTopBar()"
 });
 formatter.result({
-  "duration": 197821182,
+  "duration": 196819794,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInProjectsPanel()"
 });
 formatter.result({
-  "duration": 24035434,
+  "duration": 21442578,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectDashboardPage()"
 });
 formatter.result({
-  "duration": 631028165,
+  "duration": 901990317,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.displayToAccountPanelFromTopBar()"
 });
 formatter.result({
-  "duration": 1176062444,
+  "duration": 1358988679,
   "status": "passed"
 });
 formatter.after({
-  "duration": 78080,
+  "duration": 78933,
   "status": "passed"
 });
 formatter.before({
-  "duration": 895044604,
+  "duration": 1269535377,
   "status": "passed"
 });
 formatter.before({
-  "duration": 918113637,
+  "duration": 781470107,
   "status": "passed"
 });
 formatter.background({
@@ -209,7 +209,7 @@ formatter.match({
   "location": "LoginSteps.LogIn()"
 });
 formatter.result({
-  "duration": 3235361055,
+  "duration": 2505594458,
   "status": "passed"
 });
 formatter.scenario({
@@ -312,89 +312,89 @@ formatter.match({
   "location": "ProjectSteps.navigateToProjectDashboardPage()"
 });
 formatter.result({
-  "duration": 923725588,
+  "duration": 1092791546,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.createProjectFromProjectDashboard(String,String\u003e)"
 });
 formatter.result({
-  "duration": 3113117110,
+  "duration": 2562768267,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.isDisplayedProjectNameInProjectPage()"
 });
 formatter.result({
-  "duration": 916162062,
+  "duration": 682439836,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectDashboardPage()"
 });
 formatter.result({
-  "duration": 883309554,
+  "duration": 889424546,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInDashboardPage()"
 });
 formatter.result({
-  "duration": 22123538,
+  "duration": 23190634,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectsPage()"
 });
 formatter.result({
-  "duration": 848825471,
+  "duration": 749109546,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInProjectPage()"
 });
 formatter.result({
-  "duration": 23464980,
+  "duration": 20931858,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.displayToProjectsMenuFromTopBar()"
 });
 formatter.result({
-  "duration": 170367292,
+  "duration": 192088911,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInProjectsPanel()"
 });
 formatter.result({
-  "duration": 28575171,
+  "duration": 21176338,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectDashboardPage()"
 });
 formatter.result({
-  "duration": 790234701,
+  "duration": 752931203,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.displayToAccountPanelFromTopBar()"
 });
 formatter.result({
-  "duration": 1079211588,
+  "duration": 1008914781,
   "status": "passed"
 });
 formatter.after({
-  "duration": 24747,
+  "duration": 24320,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1320515687,
+  "duration": 1377581549,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1221482856,
+  "duration": 777348930,
   "status": "passed"
 });
 formatter.background({
@@ -413,7 +413,7 @@ formatter.match({
   "location": "LoginSteps.LogIn()"
 });
 formatter.result({
-  "duration": 2765224759,
+  "duration": 2443864699,
   "status": "passed"
 });
 formatter.scenario({
@@ -516,89 +516,89 @@ formatter.match({
   "location": "ProjectSteps.navigateToProjectsPage()"
 });
 formatter.result({
-  "duration": 821098941,
+  "duration": 791352995,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.createProjectFromProyectsPage(String,String\u003e)"
 });
 formatter.result({
-  "duration": 2329978308,
+  "duration": 2171247506,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.isDisplayedProjectNameInProjectPage()"
 });
 formatter.result({
-  "duration": 707077296,
+  "duration": 741280633,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectDashboardPage()"
 });
 formatter.result({
-  "duration": 964075916,
+  "duration": 805223940,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInDashboardPage()"
 });
 formatter.result({
-  "duration": 20412604,
+  "duration": 20587111,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectsPage()"
 });
 formatter.result({
-  "duration": 793520891,
+  "duration": 779707545,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInProjectPage()"
 });
 formatter.result({
-  "duration": 19643323,
+  "duration": 22093672,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.displayToProjectsMenuFromTopBar()"
 });
 formatter.result({
-  "duration": 153309145,
+  "duration": 174080575,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInProjectsPanel()"
 });
 formatter.result({
-  "duration": 23884393,
+  "duration": 26773783,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectDashboardPage()"
 });
 formatter.result({
-  "duration": 746102823,
+  "duration": 762627637,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.displayToAccountPanelFromTopBar()"
 });
 formatter.result({
-  "duration": 1087447542,
+  "duration": 953980548,
   "status": "passed"
 });
 formatter.after({
-  "duration": 28160,
+  "duration": 25173,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1902687917,
+  "duration": 4272418365,
   "status": "passed"
 });
 formatter.before({
-  "duration": 809663837,
+  "duration": 796898387,
   "status": "passed"
 });
 formatter.background({
@@ -617,7 +617,7 @@ formatter.match({
   "location": "LoginSteps.LogIn()"
 });
 formatter.result({
-  "duration": 2653647491,
+  "duration": 2517105508,
   "status": "passed"
 });
 formatter.scenario({
@@ -720,89 +720,89 @@ formatter.match({
   "location": "ProjectSteps.navigateToProjectDashboardPage()"
 });
 formatter.result({
-  "duration": 669464464,
+  "duration": 677909485,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.createProjectFromProjectsPanel(String,String\u003e)"
 });
 formatter.result({
-  "duration": 2263239905,
+  "duration": 2213071969,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.isDisplayedProjectNameInProjectPage()"
 });
 formatter.result({
-  "duration": 790753101,
+  "duration": 649505835,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectDashboardPage()"
 });
 formatter.result({
-  "duration": 875751147,
+  "duration": 850739926,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInDashboardPage()"
 });
 formatter.result({
-  "duration": 25049194,
+  "duration": 21553938,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectsPage()"
 });
 formatter.result({
-  "duration": 806297008,
+  "duration": 783993415,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInProjectPage()"
 });
 formatter.result({
-  "duration": 21651645,
+  "duration": 19730363,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.displayToProjectsMenuFromTopBar()"
 });
 formatter.result({
-  "duration": 168586811,
+  "duration": 163448033,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.verifyIsProjectDisplayedInProjectsPanel()"
 });
 formatter.result({
-  "duration": 22690580,
+  "duration": 20580711,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.navigateToProjectDashboardPage()"
 });
 formatter.result({
-  "duration": 713008396,
+  "duration": 696347901,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.displayToAccountPanelFromTopBar()"
 });
 formatter.result({
-  "duration": 1061500212,
+  "duration": 961779168,
   "status": "passed"
 });
 formatter.after({
-  "duration": 24747,
+  "duration": 25600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1238969804,
+  "duration": 1187982241,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1217228985,
+  "duration": 3778427971,
   "status": "passed"
 });
 formatter.background({
@@ -821,7 +821,7 @@ formatter.match({
   "location": "LoginSteps.LogIn()"
 });
 formatter.result({
-  "duration": 2660331657,
+  "duration": 2394758310,
   "status": "passed"
 });
 formatter.scenario({
@@ -888,29 +888,29 @@ formatter.match({
   "location": "ProjectSteps.navigateToProjectDashboardPage()"
 });
 formatter.result({
-  "duration": 807980636,
+  "duration": 722387390,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.createDuplicateProjectNameFromProjectDashboard(String,String\u003e)"
 });
 formatter.result({
-  "duration": 693091152,
+  "duration": 693032698,
   "status": "passed"
 });
 formatter.match({
   "location": "ProjectSteps.verifyErrorMessage()"
 });
 formatter.result({
-  "duration": 254012377,
+  "duration": 277221356,
   "status": "passed"
 });
 formatter.after({
-  "duration": 191798777,
+  "duration": 146751272,
   "status": "passed"
 });
 formatter.after({
-  "duration": 37973,
+  "duration": 108800,
   "status": "passed"
 });
 });

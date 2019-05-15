@@ -4,9 +4,11 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
+import java.util.Properties;
 
 
 public class Setup {
@@ -42,25 +44,20 @@ public class Setup {
     public String token;
 
     private void initialize(){
-        JSONParser parser = new JSONParser();
-        String configFile = getClass().getClassLoader().getResource("config.json").getPath();
-
-        try (Reader reader = new FileReader(configFile)) {
-
-            JSONObject jsonObject = (JSONObject) parser.parse(reader);
-
-            urlBasePath = (String) jsonObject.get("basePath");
-            browser = (String) jsonObject.get("browser");
-            username = (String) jsonObject.get("username");
-            password = (String) jsonObject.get("password");
-            resturi = (String) jsonObject.get("resturi");
-            token = (String) jsonObject.get("token");
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ParseException e) {
+        Properties properties = new Properties();
+        try {
+            FileInputStream in = new FileInputStream("app.properties");
+            properties.load(in);
+            in.close();
+        }catch(Exception e){
             e.printStackTrace();
         }
-    }
 
+        urlBasePath = properties.getProperty("basepath");
+        browser = properties.getProperty("browser");
+        username = properties.getProperty("username");
+        password = properties.getProperty("password");
+        resturi = properties.getProperty("resturi");
+        token = properties.getProperty("token");
+    }
 }

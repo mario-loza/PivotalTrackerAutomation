@@ -1,6 +1,6 @@
 {
   "basePath" : "https://www.pivotaltracker.com/",
-  "browser" : "Chrome",
+  "browser" : "Firefox",
   "username" : "melvi.caballero@fundacion-jala.org",
   "password" : "control123*",
   "resturi" : "https://www.pivotaltracker.com/services/v5/",
