@@ -1,6 +1,6 @@
 package steps;
 
-import core.utils.Setup;
+import pivotal.utils.Setup;
 import cucumber.api.java.en.Given;
 import pivotal.ui.pages.LoginPage;
 import pivotal.ui.pages.PageTransporter;

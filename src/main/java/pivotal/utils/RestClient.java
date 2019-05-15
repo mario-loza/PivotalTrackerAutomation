@@ -1,4 +1,4 @@
-package core.utils;
+package pivotal.utils;
 
 import org.glassfish.jersey.client.authentication.HttpAuthenticationFeature;
 import org.json.simple.JSONArray;

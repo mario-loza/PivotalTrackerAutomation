@@ -1,13 +1,6 @@
-package core.utils;
-
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
+package pivotal.utils;
 
 import java.io.FileInputStream;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.Reader;
 import java.util.Properties;
 
 

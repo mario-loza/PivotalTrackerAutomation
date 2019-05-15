@@ -1,7 +1,7 @@
 package hooks;
 
 import core.selenium.WebDriverManager;
-import core.utils.RestClient;
+import pivotal.utils.RestClient;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
