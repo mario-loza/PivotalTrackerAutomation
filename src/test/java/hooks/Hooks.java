@@ -34,20 +34,20 @@ public class Hooks {
         WebDriverManager.getInstance().getWebDriver().close();
     }
 
-//    @After
-//    public void embedScreenshot(Scenario scenario) {
-//        WebDriver driver = WebDriverManager.getInstance().getWebDriver();
-//        if (scenario.isFailed()) {
-//            try {
-//                byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-//                scenario.embed(screenshot, "image/png");
-//            } catch (WebDriverException wde) {
-//                System.err.println(wde.getMessage());
-//            } catch (ClassCastException cce) {
-//                cce.printStackTrace();
-//            }
-//        }
-//    }
+    @After
+    public void embedScreenshot(Scenario scenario) {
+        WebDriver driver = WebDriverManager.getInstance().getWebDriver();
+        if (scenario.isFailed()) {
+            try {
+                byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+                scenario.embed(screenshot, "image/png");
+            } catch (WebDriverException wde) {
+                System.err.println(wde.getMessage());
+            } catch (ClassCastException cce) {
+                cce.printStackTrace();
+            }
+        }
+    }
 
 //    @After("@finalScenario")
 //    public void clearcookies() {

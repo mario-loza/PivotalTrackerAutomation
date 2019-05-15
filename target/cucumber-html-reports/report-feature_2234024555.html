@@ -77,7 +77,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumberProject</td>
               <td>1</td>
-            <td>14 May 2019, 17:20</td>
+            <td>14 may 2019, 22:38</td>
     </tr>
   </tbody>
 </table>
@@ -130,19 +130,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Project management in Pivotal Tracker</td>
-          <td      class="passed"    >2</td>
-          <td      class="failed"    >5</td>
-          <td     class="skipped"   >45</td>
+          <td      class="passed"    >52</td>
+          <td >0</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">52</td>
 
+          <td  class="passed"    >5</td>
           <td >0</td>
-          <td  class="failed"    >5</td>
           <td class="total">5</td>
 
-          <td class="duration" data-value="54364007100">54.364</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="76807975516">1:16.807</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -174,7 +174,7 @@ $(document).ready(function() {
   </div>
 
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Feature</span>
   <span class="name">Project management in Pivotal Tracker</span>
   
@@ -192,7 +192,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">42.981</span>
+  <span class="lead-duration duration">22.606</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -233,7 +233,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I log in with username and password</span>
   
-  <span class="lead-duration duration">42.981</span>
+  <span class="lead-duration duration">22.606</span>
 
 </div>
 
@@ -271,12 +271,12 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">1.472</span>
+  <span class="lead-duration duration">17.248</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Create a new project the first time</span>
   
@@ -287,15 +287,48 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-3" class="collapse collapsable-details  in ">
+  <div id="element-3" class="collapse collapsable-details ">
     
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-4">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-4" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">Hooks.beforeScenario()</span>
+                        
+  <span class="lead-duration duration">3.001</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -305,14 +338,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-4" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Introduction page</span>
   
-  <span class="lead-duration duration">1.301</span>
+  <span class="lead-duration duration">0.956</span>
 
 </div>
 
@@ -333,62 +366,17 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">I create a new Project from Introduction page with the name &quot;<span class="argument">First Project</span>&quot;</span>
   
-  <span class="lead-duration duration">0.170</span>
+  <span class="lead-duration duration">11.607</span>
 
 </div>
 
         
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-5">
-          <a>org.openqa.selenium.NoSuchElementException:</a>
-      </div>
-      <div id="msg-5" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@type=&quot;submit&quot;]&quot;}
-  (Session info: chrome=74.0.3729.131)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ATO09CMMV01', ip: '10.28.135.30', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62196}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
-Session ID: d61948f08ab003bffce0a2142d77b5ce
-*** Element info: {Using=xpath, value=//button[@type=&quot;submit&quot;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy19.click(Unknown Source)
-	at pivotal.ui.pages.IntroductionPage.clickCreateProjectBtn(IntroductionPage.java:32)
-	at pivotal.ui.pages.IntroductionPage.firstProject(IntroductionPage.java:25)
-	at steps.ProjectSteps.createFirstProjectFromIntroductionPage(ProjectSteps.java:117)
-	at &#10045;.And I create a new Project from Introduction page with the name &quot;First Project&quot;(src/test/resources/feature/project.feature:8)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -403,11 +391,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Project page should be displayed the project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.083</span>
 
 </div>
 
@@ -428,11 +416,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Project Dashboard page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.977</span>
 
 </div>
 
@@ -453,11 +441,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Dashboard page should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.027</span>
 
 </div>
 
@@ -478,11 +466,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Projects page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.543</span>
 
 </div>
 
@@ -503,11 +491,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Projects page should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.023</span>
 
 </div>
 
@@ -528,11 +516,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I display the Projects panel from the top bar</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.197</span>
 
 </div>
 
@@ -553,11 +541,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Projects panel should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.024</span>
 
 </div>
 
@@ -578,11 +566,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Project Dashboard page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.631</span>
 
 </div>
 
@@ -603,11 +591,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">sign out of the application</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.176</span>
 
 </div>
 
@@ -631,6 +619,39 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
 
 
     
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-6" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.embedScreenshot(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
 
   </div>
 </div>
@@ -643,12 +664,12 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
   </div>
 
   
-  <span class="lead-duration duration">3.190</span>
+  <span class="lead-duration duration">3.235</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-6">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Background</span>
   <span class="name"></span>
   
@@ -659,15 +680,15 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
   </span>
   <div class="description indention"></div>
 
-  <div id="element-6" class="collapse collapsable-details  in ">
+  <div id="element-7" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-7">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -677,120 +698,20 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
 
   </div>
 
-  <div id="steps-7" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I log in with username and password</span>
   
-  <span class="lead-duration duration">3.190</span>
+  <span class="lead-duration duration">3.235</span>
 
 </div>
 
         
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-8">
-          <a>org.openqa.selenium.TimeoutException:</a>
-      </div>
-      <div id="msg-8" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: login_type_check_form' (tried for 0 second(s) with 0 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at pivotal.ui.pages.LoginPage.waitUntilPageObjectIsLoaded(LoginPage.java:27)
-	at pivotal.ui.pages.BasePage.&lt;init&gt;(BasePage.java:19)
-	at pivotal.ui.pages.LoginPage.&lt;init&gt;(LoginPage.java:11)
-	at pivotal.ui.pages.PageTransporter.navigateToLoginPage(PageTransporter.java:61)
-	at steps.LoginSteps.LogIn(LoginSteps.java:15)
-	at &#10045;.Given I log in with username and password(src/test/resources/feature/project.feature:3)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;login_type_check_form&quot;}
-  (Session info: chrome=74.0.3729.131)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ATO09CMMV01', ip: '10.28.135.30', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62196}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
-Session ID: d61948f08ab003bffce0a2142d77b5ce
-*** Element info: {Using=id, value=login_type_check_form}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at pivotal.ui.pages.LoginPage.waitUntilPageObjectIsLoaded(LoginPage.java:27)
-	at pivotal.ui.pages.BasePage.&lt;init&gt;(BasePage.java:19)
-	at pivotal.ui.pages.LoginPage.&lt;init&gt;(LoginPage.java:11)
-	at pivotal.ui.pages.PageTransporter.navigateToLoginPage(PageTransporter.java:61)
-	at steps.LoginSteps.LogIn(LoginSteps.java:15)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -823,12 +744,12 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
 
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">8.799</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-9">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Create a new project when user has at least 1 project</span>
   
@@ -839,15 +760,65 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
   </span>
   <div class="description indention"></div>
 
-  <div id="element-9" class="collapse collapsable-details  in ">
+  <div id="element-9" class="collapse collapsable-details ">
     
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-10" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">Hooks.beforeScenario()</span>
+                        
+  <span class="lead-duration duration">0.895</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">Hooks.createProject()</span>
+                        
+  <span class="lead-duration duration">0.918</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-10">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -857,14 +828,14 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
 
   </div>
 
-  <div id="steps-10" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Project Dashboard page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.923</span>
 
 </div>
 
@@ -885,11 +856,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">I create a new Project from Project Dashboard page with the following values</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.113</span>
 
 </div>
 
@@ -924,11 +895,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Project page should be displayed the project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.916</span>
 
 </div>
 
@@ -949,11 +920,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Project Dashboard page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.883</span>
 
 </div>
 
@@ -974,11 +945,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Dashboard page should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.022</span>
 
 </div>
 
@@ -999,11 +970,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Projects page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.848</span>
 
 </div>
 
@@ -1024,11 +995,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Projects page should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.023</span>
 
 </div>
 
@@ -1049,11 +1020,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I display the Projects panel from the top bar</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.170</span>
 
 </div>
 
@@ -1074,11 +1045,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Projects panel should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.028</span>
 
 </div>
 
@@ -1099,11 +1070,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Project Dashboard page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.790</span>
 
 </div>
 
@@ -1124,11 +1095,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">sign out of the application</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.079</span>
 
 </div>
 
@@ -1152,6 +1123,39 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
 
 
     
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-12" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.embedScreenshot(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
 
   </div>
 </div>
@@ -1164,12 +1168,12 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
   </div>
 
   
-  <span class="lead-duration duration">3.230</span>
+  <span class="lead-duration duration">2.765</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-11">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Background</span>
   <span class="name"></span>
   
@@ -1180,15 +1184,15 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
   </span>
   <div class="description indention"></div>
 
-  <div id="element-11" class="collapse collapsable-details  in ">
+  <div id="element-13" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-12">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -1198,120 +1202,20 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
 
   </div>
 
-  <div id="steps-12" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I log in with username and password</span>
   
-  <span class="lead-duration duration">3.230</span>
+  <span class="lead-duration duration">2.765</span>
 
 </div>
 
         
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-13">
-          <a>org.openqa.selenium.TimeoutException:</a>
-      </div>
-      <div id="msg-13" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: login_type_check_form' (tried for 0 second(s) with 0 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at pivotal.ui.pages.LoginPage.waitUntilPageObjectIsLoaded(LoginPage.java:27)
-	at pivotal.ui.pages.BasePage.&lt;init&gt;(BasePage.java:19)
-	at pivotal.ui.pages.LoginPage.&lt;init&gt;(LoginPage.java:11)
-	at pivotal.ui.pages.PageTransporter.navigateToLoginPage(PageTransporter.java:61)
-	at steps.LoginSteps.LogIn(LoginSteps.java:15)
-	at &#10045;.Given I log in with username and password(src/test/resources/feature/project.feature:3)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;login_type_check_form&quot;}
-  (Session info: chrome=74.0.3729.131)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ATO09CMMV01', ip: '10.28.135.30', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62196}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
-Session ID: d61948f08ab003bffce0a2142d77b5ce
-*** Element info: {Using=id, value=login_type_check_form}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at pivotal.ui.pages.LoginPage.waitUntilPageObjectIsLoaded(LoginPage.java:27)
-	at pivotal.ui.pages.BasePage.&lt;init&gt;(BasePage.java:19)
-	at pivotal.ui.pages.LoginPage.&lt;init&gt;(LoginPage.java:11)
-	at pivotal.ui.pages.PageTransporter.navigateToLoginPage(PageTransporter.java:61)
-	at steps.LoginSteps.LogIn(LoginSteps.java:15)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -1344,12 +1248,12 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
 
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">7.666</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-14">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Create a new project when user has at least one project from project page</span>
   
@@ -1360,15 +1264,65 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
   </span>
   <div class="description indention"></div>
 
-  <div id="element-14" class="collapse collapsable-details  in ">
+  <div id="element-15" class="collapse collapsable-details ">
     
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-16">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-16" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">Hooks.beforeScenario()</span>
+                        
+  <span class="lead-duration duration">1.320</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">Hooks.createProject()</span>
+                        
+  <span class="lead-duration duration">1.221</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-15">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -1378,14 +1332,14 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
 
   </div>
 
-  <div id="steps-15" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Projects page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.821</span>
 
 </div>
 
@@ -1406,11 +1360,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">I create a new Project from Projects page with the following values</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.329</span>
 
 </div>
 
@@ -1445,11 +1399,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Project page should be displayed the project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.707</span>
 
 </div>
 
@@ -1470,11 +1424,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Project Dashboard page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.964</span>
 
 </div>
 
@@ -1495,11 +1449,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Dashboard page should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.020</span>
 
 </div>
 
@@ -1520,11 +1474,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Projects page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.793</span>
 
 </div>
 
@@ -1545,11 +1499,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Projects page should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.019</span>
 
 </div>
 
@@ -1570,11 +1524,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I display the Projects panel from the top bar</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.153</span>
 
 </div>
 
@@ -1595,11 +1549,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Projects panel should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.023</span>
 
 </div>
 
@@ -1620,11 +1574,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Project Dashboard page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.746</span>
 
 </div>
 
@@ -1645,11 +1599,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">sign out of the application</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.087</span>
 
 </div>
 
@@ -1673,6 +1627,39 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
 
 
     
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-18">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-18" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.embedScreenshot(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
 
   </div>
 </div>
@@ -1685,12 +1672,12 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
   </div>
 
   
-  <span class="lead-duration duration">1.590</span>
+  <span class="lead-duration duration">2.653</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-16">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Background</span>
   <span class="name"></span>
   
@@ -1701,15 +1688,15 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
   </span>
   <div class="description indention"></div>
 
-  <div id="element-16" class="collapse collapsable-details  in ">
+  <div id="element-19" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-17">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -1719,120 +1706,20 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
 
   </div>
 
-  <div id="steps-17" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-20" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I log in with username and password</span>
   
-  <span class="lead-duration duration">1.590</span>
+  <span class="lead-duration duration">2.653</span>
 
 </div>
 
         
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-18">
-          <a>org.openqa.selenium.TimeoutException:</a>
-      </div>
-      <div id="msg-18" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: login_type_check_form' (tried for 0 second(s) with 0 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at pivotal.ui.pages.LoginPage.waitUntilPageObjectIsLoaded(LoginPage.java:27)
-	at pivotal.ui.pages.BasePage.&lt;init&gt;(BasePage.java:19)
-	at pivotal.ui.pages.LoginPage.&lt;init&gt;(LoginPage.java:11)
-	at pivotal.ui.pages.PageTransporter.navigateToLoginPage(PageTransporter.java:61)
-	at steps.LoginSteps.LogIn(LoginSteps.java:15)
-	at &#10045;.Given I log in with username and password(src/test/resources/feature/project.feature:3)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;login_type_check_form&quot;}
-  (Session info: chrome=74.0.3729.131)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ATO09CMMV01', ip: '10.28.135.30', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62196}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
-Session ID: d61948f08ab003bffce0a2142d77b5ce
-*** Element info: {Using=id, value=login_type_check_form}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at pivotal.ui.pages.LoginPage.waitUntilPageObjectIsLoaded(LoginPage.java:27)
-	at pivotal.ui.pages.BasePage.&lt;init&gt;(BasePage.java:19)
-	at pivotal.ui.pages.LoginPage.&lt;init&gt;(LoginPage.java:11)
-	at pivotal.ui.pages.PageTransporter.navigateToLoginPage(PageTransporter.java:61)
-	at steps.LoginSteps.LogIn(LoginSteps.java:15)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -1865,12 +1752,12 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
 
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">7.417</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-19">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Create a new project when user has at least one project from the top bar's projects DropDown Panel</span>
   
@@ -1881,15 +1768,65 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
   </span>
   <div class="description indention"></div>
 
-  <div id="element-19" class="collapse collapsable-details  in ">
+  <div id="element-21" class="collapse collapsable-details ">
     
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-22">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-22" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">Hooks.beforeScenario()</span>
+                        
+  <span class="lead-duration duration">1.902</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">Hooks.createProject()</span>
+                        
+  <span class="lead-duration duration">0.809</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-20">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-23">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -1899,14 +1836,14 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
 
   </div>
 
-  <div id="steps-20" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-23" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Project Dashboard page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.669</span>
 
 </div>
 
@@ -1927,11 +1864,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">I create a new Project from the Projects panel from the top bar with the following values</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.263</span>
 
 </div>
 
@@ -1966,11 +1903,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Project page should be displayed the project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.790</span>
 
 </div>
 
@@ -1991,11 +1928,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Project Dashboard page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.875</span>
 
 </div>
 
@@ -2016,11 +1953,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Dashboard page should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.025</span>
 
 </div>
 
@@ -2041,11 +1978,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Projects page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.806</span>
 
 </div>
 
@@ -2066,11 +2003,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Projects page should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.021</span>
 
 </div>
 
@@ -2091,11 +2028,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I display the Projects panel from the top bar</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.168</span>
 
 </div>
 
@@ -2116,11 +2053,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Projects panel should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.022</span>
 
 </div>
 
@@ -2141,11 +2078,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Project Dashboard page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.713</span>
 
 </div>
 
@@ -2166,11 +2103,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">sign out of the application</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.061</span>
 
 </div>
 
@@ -2194,6 +2131,39 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
 
 
     
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-24">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-24" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.embedScreenshot(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
 
   </div>
 </div>
@@ -2206,12 +2176,12 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
   </div>
 
   
-  <span class="lead-duration duration">1.898</span>
+  <span class="lead-duration duration">2.660</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-21">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Background</span>
   <span class="name"></span>
   
@@ -2222,15 +2192,15 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
   </span>
   <div class="description indention"></div>
 
-  <div id="element-21" class="collapse collapsable-details  in ">
+  <div id="element-25" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-22">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-26">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -2240,120 +2210,20 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
 
   </div>
 
-  <div id="steps-22" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-26" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I log in with username and password</span>
   
-  <span class="lead-duration duration">1.898</span>
+  <span class="lead-duration duration">2.660</span>
 
 </div>
 
         
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-23">
-          <a>org.openqa.selenium.TimeoutException:</a>
-      </div>
-      <div id="msg-23" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: login_type_check_form' (tried for 0 second(s) with 0 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at pivotal.ui.pages.LoginPage.waitUntilPageObjectIsLoaded(LoginPage.java:27)
-	at pivotal.ui.pages.BasePage.&lt;init&gt;(BasePage.java:19)
-	at pivotal.ui.pages.LoginPage.&lt;init&gt;(LoginPage.java:11)
-	at pivotal.ui.pages.PageTransporter.navigateToLoginPage(PageTransporter.java:61)
-	at steps.LoginSteps.LogIn(LoginSteps.java:15)
-	at &#10045;.Given I log in with username and password(src/test/resources/feature/project.feature:3)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;login_type_check_form&quot;}
-  (Session info: chrome=74.0.3729.131)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ATO09CMMV01', ip: '10.28.135.30', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62196}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
-Session ID: d61948f08ab003bffce0a2142d77b5ce
-*** Element info: {Using=id, value=login_type_check_form}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at pivotal.ui.pages.LoginPage.waitUntilPageObjectIsLoaded(LoginPage.java:27)
-	at pivotal.ui.pages.BasePage.&lt;init&gt;(BasePage.java:19)
-	at pivotal.ui.pages.LoginPage.&lt;init&gt;(LoginPage.java:11)
-	at pivotal.ui.pages.PageTransporter.navigateToLoginPage(PageTransporter.java:61)
-	at steps.LoginSteps.LogIn(LoginSteps.java:15)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -2387,12 +2257,12 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
 
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.755</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-24">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-27">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Create a new project with a duplicate project name</span>
   
@@ -2403,15 +2273,65 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
   </span>
   <div class="description indention"></div>
 
-  <div id="element-24" class="collapse collapsable-details  in ">
+  <div id="element-27" class="collapse collapsable-details ">
     
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-28">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-28" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">Hooks.beforeScenario()</span>
+                        
+  <span class="lead-duration duration">1.238</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">Hooks.createProject()</span>
+                        
+  <span class="lead-duration duration">1.217</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-25">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-29">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -2421,14 +2341,14 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
 
   </div>
 
-  <div id="steps-25" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-29" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Project Dashboard page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.807</span>
 
 </div>
 
@@ -2449,11 +2369,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">I create a new Project from Project Dashboard page with a duplicate project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.693</span>
 
 </div>
 
@@ -2488,11 +2408,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">verify that the error message is displayed</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.254</span>
 
 </div>
 
@@ -2516,6 +2436,56 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
 
 
     
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-30">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-30" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.closeTheApplication()</span>
+                        
+  <span class="lead-duration duration">0.191</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.embedScreenshot(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
 
   </div>
 </div>

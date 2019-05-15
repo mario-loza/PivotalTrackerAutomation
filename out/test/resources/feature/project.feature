@@ -16,7 +16,7 @@ Feature:  Project management in Pivotal Tracker
     When I navigate to Project Dashboard page
     Then sign out of the application
 
- @deleteAllProject @createProject
+  @deleteAllProject @createProject
   Scenario: Create a new project when user has at least 1 project
     When I navigate to Project Dashboard page
     And I create a new Project from Project Dashboard page with the following values

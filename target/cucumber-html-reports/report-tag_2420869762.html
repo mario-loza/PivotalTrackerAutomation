@@ -77,7 +77,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumberProject</td>
               <td>1</td>
-            <td>14 May 2019, 17:20</td>
+            <td>14 may 2019, 22:38</td>
     </tr>
   </tbody>
 </table>
@@ -130,19 +130,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@deleteAllProject</td>
-          <td      class="passed"    >1</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >45</td>
+          <td      class="passed"    >47</td>
+          <td >0</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">47</td>
 
+          <td  class="passed"    >5</td>
           <td >0</td>
-          <td  class="failed"    >5</td>
           <td class="total">5</td>
 
-          <td class="duration" data-value="1472116500">1.472</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="42886957130">42.886</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -184,12 +184,12 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">1.472</span>
+  <span class="lead-duration duration">17.248</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Create a new project the first time</span>
   
@@ -200,15 +200,48 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
     
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">Hooks.beforeScenario()</span>
+                        
+  <span class="lead-duration duration">3.001</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -218,14 +251,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Introduction page</span>
   
-  <span class="lead-duration duration">1.301</span>
+  <span class="lead-duration duration">0.956</span>
 
 </div>
 
@@ -246,62 +279,17 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">I create a new Project from Introduction page with the name &quot;<span class="argument">First Project</span>&quot;</span>
   
-  <span class="lead-duration duration">0.170</span>
+  <span class="lead-duration duration">11.607</span>
 
 </div>
 
         
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>org.openqa.selenium.NoSuchElementException:</a>
-      </div>
-      <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@type=&quot;submit&quot;]&quot;}
-  (Session info: chrome=74.0.3729.131)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ATO09CMMV01', ip: '10.28.135.30', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62196}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
-Session ID: d61948f08ab003bffce0a2142d77b5ce
-*** Element info: {Using=xpath, value=//button[@type=&quot;submit&quot;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy19.click(Unknown Source)
-	at pivotal.ui.pages.IntroductionPage.clickCreateProjectBtn(IntroductionPage.java:32)
-	at pivotal.ui.pages.IntroductionPage.firstProject(IntroductionPage.java:25)
-	at steps.ProjectSteps.createFirstProjectFromIntroductionPage(ProjectSteps.java:117)
-	at &#10045;.And I create a new Project from Introduction page with the name &quot;First Project&quot;(src/test/resources/feature/project.feature:8)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -316,11 +304,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Project page should be displayed the project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.083</span>
 
 </div>
 
@@ -341,11 +329,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Project Dashboard page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.977</span>
 
 </div>
 
@@ -366,11 +354,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Dashboard page should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.027</span>
 
 </div>
 
@@ -391,11 +379,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Projects page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.543</span>
 
 </div>
 
@@ -416,11 +404,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Projects page should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.023</span>
 
 </div>
 
@@ -441,11 +429,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I display the Projects panel from the top bar</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.197</span>
 
 </div>
 
@@ -466,11 +454,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Projects panel should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.024</span>
 
 </div>
 
@@ -491,11 +479,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Project Dashboard page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.631</span>
 
 </div>
 
@@ -516,11 +504,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">sign out of the application</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.176</span>
 
 </div>
 
@@ -544,6 +532,39 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
 
 
     
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-4" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.embedScreenshot(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
 
   </div>
 </div>
@@ -563,12 +584,12 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
 
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">8.799</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Create a new project when user has at least 1 project</span>
   
@@ -579,15 +600,65 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
   </span>
   <div class="description indention"></div>
 
-  <div id="element-4" class="collapse collapsable-details  in ">
+  <div id="element-5" class="collapse collapsable-details ">
     
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-6" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">Hooks.beforeScenario()</span>
+                        
+  <span class="lead-duration duration">0.895</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">Hooks.createProject()</span>
+                        
+  <span class="lead-duration duration">0.918</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -597,14 +668,14 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
 
   </div>
 
-  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Project Dashboard page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.923</span>
 
 </div>
 
@@ -625,11 +696,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">I create a new Project from Project Dashboard page with the following values</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">3.113</span>
 
 </div>
 
@@ -664,11 +735,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Project page should be displayed the project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.916</span>
 
 </div>
 
@@ -689,11 +760,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Project Dashboard page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.883</span>
 
 </div>
 
@@ -714,11 +785,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Dashboard page should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.022</span>
 
 </div>
 
@@ -739,11 +810,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Projects page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.848</span>
 
 </div>
 
@@ -764,11 +835,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Projects page should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.023</span>
 
 </div>
 
@@ -789,11 +860,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I display the Projects panel from the top bar</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.170</span>
 
 </div>
 
@@ -814,11 +885,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Projects panel should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.028</span>
 
 </div>
 
@@ -839,11 +910,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Project Dashboard page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.790</span>
 
 </div>
 
@@ -864,11 +935,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">sign out of the application</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.079</span>
 
 </div>
 
@@ -892,6 +963,39 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
 
 
     
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-8" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.embedScreenshot(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
 
   </div>
 </div>
@@ -911,12 +1015,12 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
 
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">7.666</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-6">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Create a new project when user has at least one project from project page</span>
   
@@ -927,15 +1031,65 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
   </span>
   <div class="description indention"></div>
 
-  <div id="element-6" class="collapse collapsable-details  in ">
+  <div id="element-9" class="collapse collapsable-details ">
     
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-10" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">Hooks.beforeScenario()</span>
+                        
+  <span class="lead-duration duration">1.320</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">Hooks.createProject()</span>
+                        
+  <span class="lead-duration duration">1.221</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-7">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -945,14 +1099,14 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
 
   </div>
 
-  <div id="steps-7" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Projects page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.821</span>
 
 </div>
 
@@ -973,11 +1127,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">I create a new Project from Projects page with the following values</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.329</span>
 
 </div>
 
@@ -1012,11 +1166,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Project page should be displayed the project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.707</span>
 
 </div>
 
@@ -1037,11 +1191,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Project Dashboard page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.964</span>
 
 </div>
 
@@ -1062,11 +1216,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Dashboard page should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.020</span>
 
 </div>
 
@@ -1087,11 +1241,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Projects page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.793</span>
 
 </div>
 
@@ -1112,11 +1266,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Projects page should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.019</span>
 
 </div>
 
@@ -1137,11 +1291,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I display the Projects panel from the top bar</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.153</span>
 
 </div>
 
@@ -1162,11 +1316,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Projects panel should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.023</span>
 
 </div>
 
@@ -1187,11 +1341,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Project Dashboard page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.746</span>
 
 </div>
 
@@ -1212,11 +1366,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">sign out of the application</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.087</span>
 
 </div>
 
@@ -1240,6 +1394,39 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
 
 
     
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-12" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.embedScreenshot(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
 
   </div>
 </div>
@@ -1259,12 +1446,12 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
 
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">7.417</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-8">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Create a new project when user has at least one project from the top bar's projects DropDown Panel</span>
   
@@ -1275,15 +1462,65 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
   </span>
   <div class="description indention"></div>
 
-  <div id="element-8" class="collapse collapsable-details  in ">
+  <div id="element-13" class="collapse collapsable-details ">
     
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-14">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-14" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">Hooks.beforeScenario()</span>
+                        
+  <span class="lead-duration duration">1.902</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">Hooks.createProject()</span>
+                        
+  <span class="lead-duration duration">0.809</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-9">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-15">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -1293,14 +1530,14 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
 
   </div>
 
-  <div id="steps-9" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-15" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Project Dashboard page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.669</span>
 
 </div>
 
@@ -1321,11 +1558,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">I create a new Project from the Projects panel from the top bar with the following values</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.263</span>
 
 </div>
 
@@ -1360,11 +1597,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Project page should be displayed the project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.790</span>
 
 </div>
 
@@ -1385,11 +1622,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Project Dashboard page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.875</span>
 
 </div>
 
@@ -1410,11 +1647,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Dashboard page should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.025</span>
 
 </div>
 
@@ -1435,11 +1672,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Projects page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.806</span>
 
 </div>
 
@@ -1460,11 +1697,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Projects page should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.021</span>
 
 </div>
 
@@ -1485,11 +1722,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I display the Projects panel from the top bar</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.168</span>
 
 </div>
 
@@ -1510,11 +1747,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">the Projects panel should be displayed the Project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.022</span>
 
 </div>
 
@@ -1535,11 +1772,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Project Dashboard page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.713</span>
 
 </div>
 
@@ -1560,11 +1797,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">sign out of the application</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.061</span>
 
 </div>
 
@@ -1588,6 +1825,39 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
 
 
     
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-16">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-16" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.embedScreenshot(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
 
   </div>
 </div>
@@ -1608,12 +1878,12 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
 
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.755</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-10">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Create a new project with a duplicate project name</span>
   
@@ -1624,15 +1894,65 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
   </span>
   <div class="description indention"></div>
 
-  <div id="element-10" class="collapse collapsable-details  in ">
+  <div id="element-17" class="collapse collapsable-details ">
     
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-18">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-18" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">Hooks.beforeScenario()</span>
+                        
+  <span class="lead-duration duration">1.238</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">Hooks.createProject()</span>
+                        
+  <span class="lead-duration duration">1.217</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-11">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-19">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -1642,14 +1962,14 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
 
   </div>
 
-  <div id="steps-11" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-19" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">I navigate to Project Dashboard page</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.807</span>
 
 </div>
 
@@ -1670,11 +1990,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">I create a new Project from Project Dashboard page with a duplicate project name</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.693</span>
 
 </div>
 
@@ -1709,11 +2029,11 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">verify that the error message is displayed</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.254</span>
 
 </div>
 
@@ -1737,6 +2057,56 @@ Session ID: d61948f08ab003bffce0a2142d77b5ce
 
 
     
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-20">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-20" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.closeTheApplication()</span>
+                        
+  <span class="lead-duration duration">0.191</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Hooks.embedScreenshot(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
 
   </div>
 </div>

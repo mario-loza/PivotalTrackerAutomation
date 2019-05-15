@@ -29,7 +29,7 @@ public class ProjectSteps {
     ProjectsDropDownPanel projectsDropDownPanel;
     AccountPanel accountPanel;
     IntroductionPage introductionPage;
-    //DI (Dependency Injection)
+    //DI (Cucumber Dependency Injection)
     private Project project;
     public ProjectSteps(Project project) {
         this.project = project;
