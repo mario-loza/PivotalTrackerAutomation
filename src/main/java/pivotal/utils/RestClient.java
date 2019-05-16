@@ -1,5 +1,7 @@
 package pivotal.utils;
 
+import core.utils.Logs;
+import org.apache.log4j.Logger;
 import org.glassfish.jersey.client.authentication.HttpAuthenticationFeature;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -19,10 +21,9 @@ import java.util.List;
  * Post, get, and delete.
  */
 public class RestClient {
-   // private static final String REST_URI
-  //          = "https://www.pivotaltracker.com/services/v5/";
-   // String token = "cd4715309620eea692d2cc5bb9345990";
 
+    /** It creates to follow up the instruction of the class*/
+    private Logger log = Logs.getInstance().getLog();
     private Client client;
 
     /**
@@ -73,6 +74,7 @@ public class RestClient {
                 results.add((Long) (iterator.next().get("id")));
             }
         } catch (Exception e) {
+            log.error(e.getMessage());
             System.out.println(e.getMessage());
         }
         return results;

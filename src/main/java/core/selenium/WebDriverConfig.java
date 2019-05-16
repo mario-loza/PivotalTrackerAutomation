@@ -1,5 +1,8 @@
 package core.selenium;
 
+import core.utils.Logs;
+import org.apache.log4j.Logger;
+
 import java.io.FileInputStream;
 import java.util.Properties;
 
@@ -7,10 +10,9 @@ import java.util.Properties;
  * Class to manage the config of web driver.
  */
 public class WebDriverConfig {
+    /** It creates to follow up the instruction of the class*/
+    private Logger log = Logs.getInstance().getLog();
 
-//    private static final String BROWSER = "browser";
-//
-//    private String browser;
     private int implicitWaitTime;
     private int explicitWaitTime;
     private int waitSleepTime;
@@ -43,7 +45,9 @@ public class WebDriverConfig {
             properties.load(in);
             in.close();
         }catch(Exception e){
+            log.error(e.getMessage());
             e.printStackTrace();
+
         }
 
         implicitWaitTime = Integer.parseInt(properties.getProperty("implicitWaitTime"));

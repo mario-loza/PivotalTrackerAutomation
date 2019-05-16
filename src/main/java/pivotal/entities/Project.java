@@ -1,5 +1,8 @@
 package pivotal.entities;
 
+import core.utils.Logs;
+import org.apache.log4j.Logger;
+
 import java.util.Map;
 
 /**
@@ -7,6 +10,9 @@ import java.util.Map;
  * Class to attributes project.
  */
 public class Project {
+    /** It creates to follow up the instruction of the class*/
+    private Logger log = Logs.getInstance().getLog();
+
     String name;
     String account;
     String privacy;
@@ -64,6 +70,7 @@ public class Project {
      * @param projectInformation map with datas.
      */
     public void setInformation(final Map<String, String> projectInformation) {
+        log.info("Set information of project.");
         setName(projectInformation.get("Project Name"));
         setAccount(projectInformation.get("Account"));
         setPrivacy(projectInformation.get("Project Privacy"));

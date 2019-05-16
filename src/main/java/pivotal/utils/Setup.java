@@ -1,11 +1,15 @@
 package pivotal.utils;
 
+import core.utils.Logs;
+import org.apache.log4j.Logger;
+
 import java.io.FileInputStream;
 import java.util.Properties;
 
 
 public class Setup {
-
+    /** It creates to follow up the instruction of the class*/
+    private Logger log = Logs.getInstance().getLog();
     private static Setup instance;
 
     /**
@@ -43,6 +47,7 @@ public class Setup {
             properties.load(in);
             in.close();
         }catch(Exception e){
+            log.info(e.getMessage());
             e.printStackTrace();
         }
 
