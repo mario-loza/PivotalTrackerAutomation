@@ -12,10 +12,10 @@ public abstract class BasePage {
     /**
      * Initializes the web driver, wait and web elements.
      */
-    public BasePage(){
-        this.driver= WebDriverManager.getInstance().getWebDriver();
-        this.wait= WebDriverManager.getInstance().getWait();
-        PageFactory.initElements(driver,this);
+    public BasePage() {
+        this.driver = WebDriverManager.getInstance().getWebDriver();
+        this.wait = WebDriverManager.getInstance().getWait();
+        PageFactory.initElements(driver, this);
         waitUntilPageObjectIsLoaded();
     }
 

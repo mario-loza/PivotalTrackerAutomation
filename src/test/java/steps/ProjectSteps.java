@@ -21,9 +21,6 @@ import java.util.Map;
  */
 public class ProjectSteps {
 
-    /** It creates to follow up the instruction of the class*/
-    private Logger log = Logs.getInstance().getLog();
-
     PageTransporter pageTransporter = PageTransporter.getInstance();
     //pages
     ProjectDashboardPage projectDashboardPage;
@@ -34,8 +31,13 @@ public class ProjectSteps {
     ProjectsDropDownPanel projectsDropDownPanel;
     AccountPanel accountPanel;
     IntroductionPage introductionPage;
+    /**
+     * It creates to follow up the instruction of the class
+     */
+    private Logger log = Logs.getInstance().getLog();
     //DI (Cucumber Dependency Injection)
     private Project project;
+
     public ProjectSteps(Project project) {
         this.project = project;
     }
@@ -132,7 +134,7 @@ public class ProjectSteps {
 
     @And("^I create a new Project from Introduction page with the name \"([^\"]*)\"$")
     public void createFirstProjectFromIntroductionPage(String projectName) {
-        log.info("Running step I create a new Project from Introduction page with the name "+projectName);
+        log.info("Running step I create a new Project from Introduction page with the name " + projectName);
         introductionPage.firstProject(projectName);
         this.project.setName(projectName);
     }
@@ -146,7 +148,7 @@ public class ProjectSteps {
     }
 
     @Then("^verify that the error message is displayed$")
-    public void verifyErrorMessage(){
+    public void verifyErrorMessage() {
         log.info("Running step verify that the error message is displayed.");
         Assert.assertTrue(createProjectPopup.isErrorMessage());
     }

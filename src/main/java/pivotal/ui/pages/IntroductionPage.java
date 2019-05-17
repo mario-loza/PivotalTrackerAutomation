@@ -23,7 +23,7 @@ public class IntroductionPage extends BasePage {
     public ProjectDetailPage firstProject(String projectName) {
         setFirstProjectName(projectName);
         clickCreateProjectBtn();
-        wait.withTimeout( 20, TimeUnit.SECONDS).until(ExpectedConditions.urlContains("/n/projects"));
+        wait.withTimeout(20, TimeUnit.SECONDS).until(ExpectedConditions.urlContains("/n/projects"));
         return new ProjectDetailPage();
     }
 

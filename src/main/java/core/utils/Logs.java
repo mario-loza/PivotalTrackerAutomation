@@ -17,12 +17,13 @@ import org.apache.log4j.PropertyConfigurator;
 
 /**
  * Logs
- * @version 0.0.1
+ *
  * @author
+ * @version 0.0.1
  */
 public class Logs {
-    private static Logs instance = null;
     protected final static Logger log = Logger.getLogger(Logs.class);
+    private static Logs instance = null;
 
     /**
      * Is the private constructor of our Singleton class
@@ -36,6 +37,7 @@ public class Logs {
      * if it just was created, returns just the object created
      * It has a log4j.properties to config the syntax's logs. That
      * file is in the folder resources
+     *
      * @return Logger
      */
     public static Logs getInstance() {

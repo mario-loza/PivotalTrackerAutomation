@@ -28,6 +28,7 @@ public class TopBar extends BasePage {
 
     /**
      * For press the create project button.
+     *
      * @return the project panel.
      */
     public ProjectsDropDownPanel pressProjectButton() {
@@ -37,6 +38,7 @@ public class TopBar extends BasePage {
 
     /**
      * For press the Account link in the Top Bar.
+     *
      * @return the account panel.
      */
     public AccountPanel pressAccountPanelLink() {

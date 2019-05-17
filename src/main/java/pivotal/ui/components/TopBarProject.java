@@ -13,19 +13,20 @@ import java.time.Duration;
  */
 public class TopBarProject extends TopBar {
 
-    @FindBy(xpath="//span[@class=\"raw_context_name\"]")
+    @FindBy(xpath = "//span[@class=\"raw_context_name\"]")
     protected WebElement projectName;
 
     /**
      * Get the current Project Name.
+     *
      * @return the project name.
      */
-    public String GetCurrentProjectName(){
+    public String GetCurrentProjectName() {
         return projectName.getText();
     }
 
     @Override
     public void waitUntilPageObjectIsLoaded() {
-        wait.withTimeout( Duration.ofSeconds(10)) .until(ExpectedConditions.visibilityOf(projectName));
+        wait.withTimeout(Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(projectName));
     }
 }

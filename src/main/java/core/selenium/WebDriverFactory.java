@@ -6,7 +6,7 @@ import pivotal.utils.Setup;
 
 public class WebDriverFactory {
 
-    public IDriverInit GetDriverInit(){
+    public IDriverInit GetDriverInit() {
         if (Setup.getInstance().browser.equals("Chrome"))
             return new Chrome();
         else

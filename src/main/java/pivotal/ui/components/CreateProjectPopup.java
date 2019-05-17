@@ -42,6 +42,7 @@ public class CreateProjectPopup extends BasePage {
 
     /**
      * Set a project name in the text box.
+     *
      * @param projectName the name with the project was creating.
      */
     public void setProjectNameTextBox(String projectName) {
@@ -88,6 +89,7 @@ public class CreateProjectPopup extends BasePage {
 
     /**
      * Verify that a error mmesage when the time to wait is over.
+     *
      * @return true is the time wait is enough else false.
      */
     public boolean isErrorMessage() {
@@ -101,7 +103,8 @@ public class CreateProjectPopup extends BasePage {
 
     /**
      * Create a new project when user has at least 1 project.
-     * @param project all main attributes for a create a new project.
+     *
+     * @param project     all main attributes for a create a new project.
      * @param waitSuccess time to wait is enough.
      */
     public void createNewProject(Project project, Boolean waitSuccess) {

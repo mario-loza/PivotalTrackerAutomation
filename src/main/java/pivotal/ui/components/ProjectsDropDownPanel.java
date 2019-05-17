@@ -24,6 +24,7 @@ public class ProjectsDropDownPanel extends BasePage {
 
     /**
      * Press in the link for create a new project.
+     *
      * @return the create project popup is displayed.
      */
     public CreateProjectPopup pressCreateProjectLink() {
@@ -33,6 +34,7 @@ public class ProjectsDropDownPanel extends BasePage {
 
     /**
      * The projects is listed and searched the project element in the list.
+     *
      * @param projectName to search.
      * @return the size of list to project.
      */

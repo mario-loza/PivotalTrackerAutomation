@@ -25,7 +25,7 @@ public class ProjectsPage extends BasePage {
     }
 
     public boolean projectNameIsListed(String projectName) {
-        List<WebElement> projects = driver.findElements(By.xpath("//a[@class=\"project_name\" and text()=\""+projectName+"\"]"));
+        List<WebElement> projects = driver.findElements(By.xpath("//a[@class=\"project_name\" and text()=\"" + projectName + "\"]"));
         return projects.size() > 0;
     }
 

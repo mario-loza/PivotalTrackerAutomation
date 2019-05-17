@@ -10,15 +10,17 @@ import java.util.Map;
  * Class to attributes project.
  */
 public class Project {
-    /** It creates to follow up the instruction of the class*/
-    private Logger log = Logs.getInstance().getLog();
-
     String name;
     String account;
     String privacy;
+    /**
+     * It creates to follow up the instruction of the class
+     */
+    private Logger log = Logs.getInstance().getLog();
 
     /**
      * Gets the project name with that the tests are being executed.
+     *
      * @return project name.
      */
     public String getName() {
@@ -27,6 +29,7 @@ public class Project {
 
     /**
      * Sets the project name with that the tests are being executed.
+     *
      * @param name of the project.
      */
     public void setName(String name) {
@@ -35,7 +38,8 @@ public class Project {
 
     /**
      * Gets the account for a pivotal tracker with that the tests are being executed.
-     * @return  pivotal tracker account.
+     *
+     * @return pivotal tracker account.
      */
     public String getAccount() {
         return account;
@@ -43,6 +47,7 @@ public class Project {
 
     /**
      * Sets the account for pivotal tracker with that the tests are being executed.
+     *
      * @param account for the project.
      */
     public void setAccount(String account) {
@@ -51,6 +56,7 @@ public class Project {
 
     /**
      * Gets the attribute privacy (public or private) project name with that the tests are being executed.
+     *
      * @return public or private.
      */
     public String getPrivacy() {
@@ -59,6 +65,7 @@ public class Project {
 
     /**
      * Sets the attribute privacy with that the tests are being executed.
+     *
      * @param privacy (public or private)
      */
     public void setPrivacy(String privacy) {
@@ -67,6 +74,7 @@ public class Project {
 
     /**
      * Sets information about attributes of the new project for test.
+     *
      * @param projectInformation map with datas.
      */
     public void setInformation(final Map<String, String> projectInformation) {

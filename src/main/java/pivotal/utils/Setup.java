@@ -8,9 +8,17 @@ import java.util.Properties;
 
 
 public class Setup {
-    /** It creates to follow up the instruction of the class*/
-    private Logger log = Logs.getInstance().getLog();
     private static Setup instance;
+    public String urlBasePath;
+    public String browser;
+    public String username;
+    public String password;
+    public String resturi;
+    public String token;
+    /**
+     * It creates to follow up the instruction of the class
+     */
+    private Logger log = Logs.getInstance().getLog();
 
     /**
      * Constructor of page WebDriverManager.
@@ -32,21 +40,13 @@ public class Setup {
         return instance;
     }
 
-    public String urlBasePath;
-    public String browser;
-    public String username;
-    public String password;
-    
-    public String resturi;
-    public String token;
-
-    private void initialize(){
+    private void initialize() {
         Properties properties = new Properties();
         try {
             FileInputStream in = new FileInputStream("app.properties");
             properties.load(in);
             in.close();
-        }catch(Exception e){
+        } catch (Exception e) {
             log.info(e.getMessage());
             e.printStackTrace();
         }

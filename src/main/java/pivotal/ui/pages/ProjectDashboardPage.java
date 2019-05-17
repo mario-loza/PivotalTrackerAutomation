@@ -9,7 +9,7 @@ import pivotal.ui.components.CreateProjectPopup;
 import java.util.List;
 
 public class ProjectDashboardPage extends BasePage {
-   // private static final ACCOUNT_SELECTOR="//a[@data-aid=\"project-name\" and text()=\""+projectName+"\"]";
+    // private static final ACCOUNT_SELECTOR="//a[@data-aid=\"project-name\" and text()=\""+projectName+"\"]";
 
     @FindBy(id = "create-project-button")
     private WebElement createButton;
@@ -26,13 +26,13 @@ public class ProjectDashboardPage extends BasePage {
         wait.until(ExpectedConditions.visibilityOf(createButton));
     }
 
-    public CreateProjectPopup pressCreateProjectButton(){
+    public CreateProjectPopup pressCreateProjectButton() {
         createButton.click();
         return new CreateProjectPopup();
     }
 
-    public boolean projectNameIsListed(String projectName){
-        List<WebElement> projects = driver.findElements(By.xpath("//a[@data-aid=\"project-name\" and text()=\""+projectName+"\"]"));
-        return projects.size() >0;
+    public boolean projectNameIsListed(String projectName) {
+        List<WebElement> projects = driver.findElements(By.xpath("//a[@data-aid=\"project-name\" and text()=\"" + projectName + "\"]"));
+        return projects.size() > 0;
     }
 }

@@ -6,6 +6,7 @@ import org.glassfish.jersey.client.authentication.HttpAuthenticationFeature;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
@@ -22,7 +23,9 @@ import java.util.List;
  */
 public class RestClient {
 
-    /** It creates to follow up the instruction of the class*/
+    /**
+     * It creates to follow up the instruction of the class
+     */
     private Logger log = Logs.getInstance().getLog();
     private Client client;
 
@@ -37,6 +40,7 @@ public class RestClient {
 
     /**
      * This method is for delete project used a API delete method.
+     *
      * @param id of project
      */
     public void deleteProject(Long id) {
@@ -51,6 +55,7 @@ public class RestClient {
 
     /**
      * List all project with API method get.
+     *
      * @return result is Id of projects.
      */
     public List<Long> getAllProjects() {
@@ -93,6 +98,7 @@ public class RestClient {
 
     /**
      * This method is for Create a new project.
+     *
      * @param name the project name to it has been created.
      */
     public void createProject(String name) {
@@ -117,6 +123,7 @@ public class RestClient {
 
         /**
          * Gets project id for the test.
+         *
          * @return project id.
          */
         public int getId() {
@@ -125,6 +132,7 @@ public class RestClient {
 
         /**
          * Sets project id for the test.
+         *
          * @param id is project id.
          */
         public void setId(int id) {
@@ -133,6 +141,7 @@ public class RestClient {
 
         /**
          * Get the project name for the test.
+         *
          * @return project name.
          */
         public String getName() {
@@ -141,6 +150,7 @@ public class RestClient {
 
         /**
          * Set the project name for the test.
+         *
          * @param name is project name.
          */
         public void setName(String name) {

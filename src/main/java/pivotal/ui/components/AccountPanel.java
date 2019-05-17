@@ -11,13 +11,14 @@ import java.time.Duration;
  * Created by Melvi Caballero.
  * Class to Account panel of pivotal tracker.
  */
-public class AccountPanel extends TopBar{
+public class AccountPanel extends TopBar {
 
     @FindBy(xpath = "//button[text()=\"Sign Out\"]")
     private WebElement signOut;
 
     /**
      * This method did a press over Sign Out Link.
+     *
      * @return The login page.
      */
     public LoginPage pressSignOutLink() {
@@ -27,6 +28,6 @@ public class AccountPanel extends TopBar{
 
     @Override
     public void waitUntilPageObjectIsLoaded() {
-       wait.withTimeout( Duration.ofSeconds(10)) .until(ExpectedConditions.elementToBeClickable(signOut));
+        wait.withTimeout(Duration.ofSeconds(10)).until(ExpectedConditions.elementToBeClickable(signOut));
     }
 }

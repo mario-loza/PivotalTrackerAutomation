@@ -14,7 +14,7 @@ import java.util.List;
 
 @CucumberOptions(
         plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json"},
-        glue={"steps","hooks"},
+        glue = {"steps", "hooks"},
         features = {"src/test/resources/feature/project.feature"},
         monochrome = true)
 //, "hooks"

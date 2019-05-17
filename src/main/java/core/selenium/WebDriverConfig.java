@@ -10,18 +10,19 @@ import java.util.Properties;
  * Class to manage the config of web driver.
  */
 public class WebDriverConfig {
-    /** It creates to follow up the instruction of the class*/
+    private static WebDriverConfig instance;
+    /**
+     * It creates to follow up the instruction of the class
+     */
     private Logger log = Logs.getInstance().getLog();
-
     private int implicitWaitTime;
     private int explicitWaitTime;
     private int waitSleepTime;
 
-    private static WebDriverConfig instance;
-
     protected WebDriverConfig() {
         initialize();
     }
+
     /**
      * Constructor of WebDriverConfig.
      * Gets WebDriverConfig as Singleton.
@@ -44,7 +45,7 @@ public class WebDriverConfig {
             FileInputStream in = new FileInputStream("web_driver.properties");
             properties.load(in);
             in.close();
-        }catch(Exception e){
+        } catch (Exception e) {
             log.error(e.getMessage());
             e.printStackTrace();
 

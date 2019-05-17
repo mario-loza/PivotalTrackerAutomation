@@ -40,10 +40,10 @@ public class Firefox implements core.selenium.IDriverInit {
         firefoxProfile.setPreference("browser.helperApps.neverAsk.saveToDisk",
                 "text/csv,application/java-archive, application/x-msexcel,application/excel,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/x-excel,application/vnd.ms-excel,image/png,image/jpeg,text/html,text/plain,application/msword,application/xml,application/vnd.microsoft.portable-executable");
 
-        firefoxProfile.setPreference("browser.urlbar.showPopup",true );
-        firefoxProfile.setPreference("dom. popup_allowed_events","change click dblclick mouseup pointerup notificationclick reset submit touchend" );
+        firefoxProfile.setPreference("browser.urlbar.showPopup", true);
+        firefoxProfile.setPreference("dom. popup_allowed_events", "change click dblclick mouseup pointerup notificationclick reset submit touchend");
 
-        firefoxOptions.setProfile( firefoxProfile);
+        firefoxOptions.setProfile(firefoxProfile);
 
         //Use to ignore ssl errors
         firefoxOptions.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);

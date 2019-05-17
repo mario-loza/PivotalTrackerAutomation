@@ -12,9 +12,10 @@ import java.util.HashMap;
 /**
  * Handles Chrome driver initialization.
  */
-public class Chrome  implements core.selenium.IDriverInit {
+public class Chrome implements core.selenium.IDriverInit {
     /**
      * Initializes Chrome driver.
+     *
      * @return A new ChromeDriver.
      */
     public WebDriver initDriver() {

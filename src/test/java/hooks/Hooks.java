@@ -17,7 +17,9 @@ import org.openqa.selenium.WebDriverException;
  * Class to Hooks.
  */
 public class Hooks {
-    /** It creates to follow up the instruction of the class*/
+    /**
+     * It creates to follow up the instruction of the class
+     */
     private Logger log = Logs.getInstance().getLog();
 
     @Before(order = 1, value = "@deleteAllProject")

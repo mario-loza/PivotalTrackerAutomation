@@ -10,16 +10,16 @@ import pivotal.ui.pages.BasePage;
  */
 public class LoginPage extends BasePage {
 
-    @FindBy(id="login_type_check_form")
+    @FindBy(id = "login_type_check_form")
     private WebElement loginForm;
 
-    @FindBy(id="credentials_username")
+    @FindBy(id = "credentials_username")
     private WebElement userNameTextBox;
 
-    @FindBy(css="input[class='app_signin_action_button']")
+    @FindBy(css = "input[class='app_signin_action_button']")
     private WebElement nextSignInBtn;
 
-    @FindBy(id="credentials_password")
+    @FindBy(id = "credentials_password")
     private WebElement passwordTextBox;
 
     @Override

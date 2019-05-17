@@ -13,11 +13,10 @@ import java.util.concurrent.TimeUnit;
  * Class to manage web driver.
  */
 public class WebDriverManager {
+    private static WebDriverManager instance = null;
     private WebDriverConfig webDriverConfig = WebDriverConfig.getInstance();
     private WebDriver webDriver;
     private WebDriverWait webDriverWait;
-
-    private static WebDriverManager instance = null;
 
     /**
      * Constructor of page WebDriverManager.
@@ -63,7 +62,7 @@ public class WebDriverManager {
         return webDriver;
     }
 
-     /**
+    /**
      * Gets the WebDriver Wait.
      *
      * @return WebDriverWait.
