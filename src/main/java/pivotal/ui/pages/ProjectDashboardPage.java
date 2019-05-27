@@ -8,6 +8,9 @@ import pivotal.ui.components.CreateProjectPopup;
 
 import java.util.List;
 
+/**
+ * ProjectDashboardPage.
+ */
 public class ProjectDashboardPage extends BasePage {
     // private static final ACCOUNT_SELECTOR="//a[@data-aid=\"project-name\" and text()=\""+projectName+"\"]";
 
@@ -17,22 +20,33 @@ public class ProjectDashboardPage extends BasePage {
     @FindBy(xpath = "press-button")
     private WebElement pressButton;
 
-    @FindBy(xpath = "@FindBy(xpath = \"press-button\")\n" +
-            "    private WebElement pressButton;\n")
-    private WebElement nameProject;
+//    @FindBy(xpath = "")
+//    private WebElement nameProject;
 
     @Override
     public void waitUntilPageObjectIsLoaded() {
         wait.until(ExpectedConditions.visibilityOf(createButton));
     }
 
+    /**
+     * Press CreateProject.
+     *
+     * @return CreateProjectPopup
+     */
     public CreateProjectPopup pressCreateProjectButton() {
         createButton.click();
         return new CreateProjectPopup();
     }
 
-    public boolean projectNameIsListed(String projectName) {
-        List<WebElement> projects = driver.findElements(By.xpath("//a[@data-aid=\"project-name\" and text()=\"" + projectName + "\"]"));
+    /**
+     * Verify Project name is listed.
+     *
+     * @param projectName the project name
+     * @return boolean
+     */
+    public boolean projectNameIsListed(final String projectName) {
+        List<WebElement> projects = driver.findElements(By.xpath("//a[@data-aid=\"project-name\" and text()=\""
+                + projectName + "\"]"));
         return projects.size() > 0;
     }
 }

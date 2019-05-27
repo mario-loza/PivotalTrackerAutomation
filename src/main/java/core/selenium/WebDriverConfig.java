@@ -12,13 +12,16 @@ import java.util.Properties;
 public class WebDriverConfig {
     private static WebDriverConfig instance;
     /**
-     * It creates to follow up the instruction of the class
+     * It creates to follow up the instruction of the class.
      */
     private Logger log = Logs.getInstance().getLog();
     private int implicitWaitTime;
     private int explicitWaitTime;
     private int waitSleepTime;
 
+    /**
+     * Constructor.
+     */
     protected WebDriverConfig() {
         initialize();
     }

@@ -3,7 +3,6 @@ package pivotal.ui.components;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import pivotal.ui.components.TopBar;
 
 import java.time.Duration;
 
@@ -13,6 +12,7 @@ import java.time.Duration;
  */
 public class TopBarProject extends TopBar {
 
+    public static final int SECONDS = 10;
     @FindBy(xpath = "//span[@class=\"raw_context_name\"]")
     protected WebElement projectName;
 
@@ -21,12 +21,12 @@ public class TopBarProject extends TopBar {
      *
      * @return the project name.
      */
-    public String GetCurrentProjectName() {
+    public String getCurrentProjectName() {
         return projectName.getText();
     }
 
     @Override
     public void waitUntilPageObjectIsLoaded() {
-        wait.withTimeout(Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(projectName));
+        wait.withTimeout(Duration.ofSeconds(SECONDS)).until(ExpectedConditions.visibilityOf(projectName));
     }
 }

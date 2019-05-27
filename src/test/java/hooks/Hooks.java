@@ -18,16 +18,22 @@ import org.openqa.selenium.WebDriverException;
  */
 public class Hooks {
     /**
-     * It creates to follow up the instruction of the class
+     * It creates to follow up the instruction of the class.
      */
     private Logger log = Logs.getInstance().getLog();
 
+    /**
+     * beforeScenario.
+     */
     @Before(order = 1, value = "@deleteAllProject")
     public void beforeScenario() {
         RestClient rc = new RestClient();
         rc.deleteAllProjects();
     }
 
+    /**
+     * createProject.
+     */
     @Before(order = 2, value = "@createProject")
     public void createProject() {
         log.info("Create a project before the scenario.");
@@ -35,14 +41,21 @@ public class Hooks {
         rc.createProject("Test Project");
     }
 
+    /**
+     * closeTheApplication.
+     */
     @After("@finalScenario")
     public void closeTheApplication() {
         log.info("Close the Application after all scenarios.");
         WebDriverManager.getInstance().getWebDriver().close();
     }
 
+    /**
+     * embedScreenshot.
+     * @param scenario scenario
+     */
     @After
-    public void embedScreenshot(Scenario scenario) {
+    public void embedScreenshot(final Scenario scenario) {
         log.info("Report Screenshot.");
         WebDriver driver = WebDriverManager.getInstance().getWebDriver();
         if (scenario.isFailed()) {

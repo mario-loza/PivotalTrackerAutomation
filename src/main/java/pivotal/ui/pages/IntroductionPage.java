@@ -6,8 +6,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Introduction Page.
+ */
 public class IntroductionPage extends BasePage {
 
+    public static final int DURATION = 20;
     @FindBy(xpath = "//input")
     private WebElement projectNameTextBox;
 
@@ -20,19 +24,32 @@ public class IntroductionPage extends BasePage {
         wait.until(ExpectedConditions.visibilityOf(projectNameTextBox));
     }
 
-    public ProjectDetailPage firstProject(String projectName) {
+    /**
+     * First Project.
+     *
+     * @param projectName name of the Project
+     * @return ProjectDetailPage
+     */
+    public ProjectDetailPage firstProject(final String projectName) {
         setFirstProjectName(projectName);
         clickCreateProjectBtn();
-        wait.withTimeout(20, TimeUnit.SECONDS).until(ExpectedConditions.urlContains("/n/projects"));
+        wait.withTimeout(DURATION, TimeUnit.SECONDS).until(ExpectedConditions.urlContains("/n/projects"));
         return new ProjectDetailPage();
     }
 
-
+    /**
+     * Click create Project.
+     */
     private void clickCreateProjectBtn() {
         createProjectButton.click();
     }
 
-    private void setFirstProjectName(String projectName) {
+    /**
+     * First Project Name.
+     *
+     * @param projectName the project name.
+     */
+    private void setFirstProjectName(final String projectName) {
         projectNameTextBox.sendKeys(projectName);
     }
 

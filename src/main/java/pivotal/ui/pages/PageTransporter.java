@@ -10,14 +10,17 @@ import pivotal.ui.components.ProjectsDropDownPanel;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+/**
+ * Page transporter Class.
+ */
 public class PageTransporter {
 
     private static PageTransporter instance;
     /**
-     * It creates to follow up the instruction of the class
+     * It creates to follow up the instruction of the class.
      */
     private Logger log = Logs.getInstance().getLog();
-    private String baseURL = Setup.getInstance().urlBasePath;
+    private String baseURL = Setup.getInstance().getUrlBasePath();
     private WebDriver webDriver;
 
     /**
@@ -72,24 +75,44 @@ public class PageTransporter {
         return new LoginPage();
     }
 
+    /**
+     * Navigate to Project Dashboard.
+     *
+     * @return ProjectDashboardPage
+     */
     public ProjectDashboardPage navigateToProjectDashboardPage() {
         log.info("Navigate in dashboard page");
         goToURL(baseURL.concat("dashboard"));
         return new ProjectDashboardPage();
     }
 
+    /**
+     * Navigate to Projects Page.
+     *
+     * @return ProjectsPage
+     */
     public ProjectsPage navigateToProjectsPage() {
         log.info("Navigate in projects page");
         goToURL(baseURL.concat("projects"));
         return new ProjectsPage();
     }
 
+    /**
+     * Navigate to Projects DropDownPanel.
+     *
+     * @return ProjectsDropDownPanel
+     */
     public ProjectsDropDownPanel navigateToProjectsDropDownPanel() {
         log.info("Navigate in DropDownPanel page");
         goToURL(baseURL.concat("DropDownPanel"));
         return new ProjectsDropDownPanel();
     }
 
+    /**
+     * Navigate to Introduction Page.
+     *
+     * @return IntroductionPage
+     */
     public IntroductionPage navigateToIntroductionPage() {
         log.info("Navigate in introduction page");
         goToURL(baseURL.concat("introduction"));

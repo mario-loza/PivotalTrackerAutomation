@@ -1,8 +1,5 @@
 package core.selenium;
 
-import core.selenium.webdrivers.Chrome;
-import core.selenium.webdrivers.Firefox;
-import io.github.bonigarcia.wdm.FirefoxDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -42,7 +39,7 @@ public class WebDriverManager {
      */
     private void initialize() {
         WebDriverFactory factory = new WebDriverFactory();
-        this.webDriver = factory.GetDriverInit().initDriver();
+        this.webDriver = factory.getDriverInit().initDriver();
 
         this.webDriver.manage().window().maximize();
         this.webDriver.manage()

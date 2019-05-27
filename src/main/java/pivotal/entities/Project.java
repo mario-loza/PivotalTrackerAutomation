@@ -10,11 +10,12 @@ import java.util.Map;
  * Class to attributes project.
  */
 public class Project {
-    String name;
-    String account;
-    String privacy;
+    private String name;
+    private String account;
+    private String privacy;
+
     /**
-     * It creates to follow up the instruction of the class
+     * It creates to follow up the instruction of the class.
      */
     private Logger log = Logs.getInstance().getLog();
 
@@ -32,7 +33,7 @@ public class Project {
      *
      * @param name of the project.
      */
-    public void setName(String name) {
+    public void setName(final String name) {
         this.name = name;
     }
 
@@ -50,7 +51,7 @@ public class Project {
      *
      * @param account for the project.
      */
-    public void setAccount(String account) {
+    public void setAccount(final String account) {
         this.account = account;
     }
 
@@ -68,7 +69,7 @@ public class Project {
      *
      * @param privacy (public or private)
      */
-    public void setPrivacy(String privacy) {
+    public void setPrivacy(final String privacy) {
         this.privacy = privacy;
     }
 

@@ -16,17 +16,17 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
 /**
- * Logs
+ * Logs.
  *
  * @author
  * @version 0.0.1
  */
-public class Logs {
-    protected final static Logger log = Logger.getLogger(Logs.class);
+public final class Logs {
+    protected static final Logger LOG = Logger.getLogger(Logs.class);
     private static Logs instance = null;
 
     /**
-     * Is the private constructor of our Singleton class
+     * Is the private constructor of our Singleton class.
      */
     private Logs() {
         super();
@@ -36,7 +36,7 @@ public class Logs {
      * A instance is created at the beginning and
      * if it just was created, returns just the object created
      * It has a log4j.properties to config the syntax's logs. That
-     * file is in the folder resources
+     * file is in the folder resources.
      *
      * @return Logger
      */
@@ -44,7 +44,7 @@ public class Logs {
         if (instance == null) {
             instance = new Logs();
             PropertyConfigurator.configure("../PivotalTrackerAutomation/log4j.properties");
-            log.setLevel(Level.ALL);
+            LOG.setLevel(Level.ALL);
         }
         return instance;
     }
@@ -53,6 +53,6 @@ public class Logs {
      * @return Logger log to do our loggers
      */
     public Logger getLog() {
-        return log;
+        return LOG;
     }
 }

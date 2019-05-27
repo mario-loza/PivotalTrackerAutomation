@@ -7,19 +7,24 @@ import cucumber.api.java.en.Given;
 import pivotal.ui.pages.LoginPage;
 import pivotal.ui.pages.PageTransporter;
 
+/**
+ * LoginSteps.
+ */
 public class LoginSteps {
-    PageTransporter pageTransporter = PageTransporter.getInstance();
+    private PageTransporter pageTransporter = PageTransporter.getInstance();
     /**
-     * It creates to follow up the instruction of the class
+     * It creates to follow up the instruction of the class.
      */
     private Logger log = Logs.getInstance().getLog();
     //pages.
     private LoginPage loginPage;
-
+    /**
+     * LogIn.
+     */
     @Given("^I log in with username and password$")
-    public void LogIn() {
+    public void logIn() {
         log.info("Running step I log in with username and password.");
         loginPage = pageTransporter.navigateToLoginPage();
-        loginPage.login(Setup.getInstance().username, Setup.getInstance().password);
+        loginPage.login(Setup.getInstance().getUsername(), Setup.getInstance().getPassword());
     }
 }

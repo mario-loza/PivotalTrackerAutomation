@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import pivotal.ui.components.CreateProjectPopup;
 import pivotal.ui.pages.BasePage;
 
 import java.util.List;
@@ -16,6 +15,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class ProjectsDropDownPanel extends BasePage {
 
+    public static final int DURATION = 10;
     @FindBy(xpath = "//a[contains(text(),\"Create Project\")]")
     private WebElement createProjectLink;
 
@@ -38,13 +38,14 @@ public class ProjectsDropDownPanel extends BasePage {
      * @param projectName to search.
      * @return the size of list to project.
      */
-    public boolean projectNameIsListed(String projectName) {
-        List<WebElement> projects = driver.findElements(By.xpath("//span[contains(@class,\"raw_project_name\") and text()=\"" + projectName + "\"]"));
+    public boolean projectNameIsListed(final String projectName) {
+        List<WebElement> projects = driver.findElements(By.xpath("//span[contains(@class,\"raw_project_name\")"
+                + " and text()=\"" + projectName + "\"]"));
         return projects.size() > 0;
     }
 
     @Override
     public void waitUntilPageObjectIsLoaded() {
-        wait.withTimeout(10, TimeUnit.SECONDS).until(ExpectedConditions.visibilityOf(showAllProjectsLink));
+        wait.withTimeout(DURATION, TimeUnit.SECONDS).until(ExpectedConditions.visibilityOf(showAllProjectsLink));
     }
 }

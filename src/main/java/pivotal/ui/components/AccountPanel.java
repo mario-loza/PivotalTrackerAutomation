@@ -13,6 +13,7 @@ import java.time.Duration;
  */
 public class AccountPanel extends TopBar {
 
+    public static final int SECONDS = 10;
     @FindBy(xpath = "//button[text()=\"Sign Out\"]")
     private WebElement signOut;
 
@@ -28,6 +29,6 @@ public class AccountPanel extends TopBar {
 
     @Override
     public void waitUntilPageObjectIsLoaded() {
-        wait.withTimeout(Duration.ofSeconds(10)).until(ExpectedConditions.elementToBeClickable(signOut));
+        wait.withTimeout(Duration.ofSeconds(SECONDS)).until(ExpectedConditions.elementToBeClickable(signOut));
     }
 }

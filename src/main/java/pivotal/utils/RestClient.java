@@ -24,7 +24,7 @@ import java.util.List;
 public class RestClient {
 
     /**
-     * It creates to follow up the instruction of the class
+     * It creates to follow up the instruction of the class.
      */
     private Logger log = Logs.getInstance().getLog();
     private Client client;
@@ -34,7 +34,8 @@ public class RestClient {
      */
     public RestClient() {
         client = ClientBuilder.newClient();
-        HttpAuthenticationFeature feature = HttpAuthenticationFeature.basic(Setup.getInstance().username, Setup.getInstance().password);
+        HttpAuthenticationFeature feature = HttpAuthenticationFeature.basic(Setup.getInstance().getUsername(),
+                Setup.getInstance().getPassword());
         client.register(feature);
     }
 
@@ -43,13 +44,13 @@ public class RestClient {
      *
      * @param id of project
      */
-    public void deleteProject(Long id) {
+    public void deleteProject(final Long id) {
         client
-                .target(Setup.getInstance().resturi)
+                .target(Setup.getInstance().getResturi())
                 .path("projects")
                 .path(String.valueOf(id))
                 .request()
-                .header("X-TrackerToken", Setup.getInstance().token)
+                .header("X-TrackerToken", Setup.getInstance().getToken())
                 .delete();
     }
 
@@ -62,10 +63,10 @@ public class RestClient {
         List<Long> results = new ArrayList<>();
 
         Response response = client
-                .target(Setup.getInstance().resturi)
+                .target(Setup.getInstance().getResturi())
                 .path("projects")
                 .request(MediaType.APPLICATION_JSON)
-                .header("X-TrackerToken", Setup.getInstance().token)
+                .header("X-TrackerToken", Setup.getInstance().getToken())
                 .get();
         String listString = response.readEntity(String.class);
 
@@ -101,16 +102,16 @@ public class RestClient {
      *
      * @param name the project name to it has been created.
      */
-    public void createProject(String name) {
+    public void createProject(final String name) {
         Project project = new Project();
         project.setId(0);
         project.setName(name);
 
         client
-                .target(Setup.getInstance().resturi)
+                .target(Setup.getInstance().getResturi())
                 .path("projects")
                 .request(MediaType.APPLICATION_JSON)
-                .header("X-TrackerToken", Setup.getInstance().token)
+                .header("X-TrackerToken", Setup.getInstance().getToken())
                 .post(Entity.json("{ \"name\" : \"" + name + "\"}"));
     }
 
@@ -153,7 +154,7 @@ public class RestClient {
          *
          * @param name is project name.
          */
-        public void setName(String name) {
+        public void setName(final String name) {
             this.name = name;
         }
     }

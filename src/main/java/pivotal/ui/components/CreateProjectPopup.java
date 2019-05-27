@@ -14,13 +14,15 @@ import java.util.concurrent.TimeUnit;
  */
 public class CreateProjectPopup extends BasePage {
 
+    public static final int DURATION = 10;
     @FindBy(name = "project_name")
     private WebElement projectNameTextBox;
 
     @FindBy(xpath = "//div[@class=\"tc-account-selector__header\"]")
     private WebElement accountDropDown;
 
-    @FindBy(xpath = "//ul[@class=\"tc-account-selector__option-list\"]/li[@class=\"tc-account-selector__option-account\"][1]")
+    @FindBy(xpath = "//ul[@class=\"tc-account-selector__option-list\"]/li"
+            + "[@class=\"tc-account-selector__option-account\"][1]")
     private WebElement getAccountDropDownFirstOption;
 
     @FindBy(xpath = "//input[@value=\"public\"]")
@@ -45,7 +47,7 @@ public class CreateProjectPopup extends BasePage {
      *
      * @param projectName the name with the project was creating.
      */
-    public void setProjectNameTextBox(String projectName) {
+    public void setProjectNameTextBox(final String projectName) {
 
         projectNameTextBox.sendKeys(projectName);
     }
@@ -62,7 +64,8 @@ public class CreateProjectPopup extends BasePage {
      */
     public void selectaccountDropdownFirstOption() {
 
-        wait.withTimeout(2, TimeUnit.SECONDS).until(ExpectedConditions.elementToBeClickable(getAccountDropDownFirstOption));
+        wait.withTimeout(2, TimeUnit.SECONDS)
+                .until(ExpectedConditions.elementToBeClickable(getAccountDropDownFirstOption));
         getAccountDropDownFirstOption.click();
     }
 
@@ -107,7 +110,7 @@ public class CreateProjectPopup extends BasePage {
      * @param project     all main attributes for a create a new project.
      * @param waitSuccess time to wait is enough.
      */
-    public void createNewProject(Project project, Boolean waitSuccess) {
+    public void createNewProject(final Project project, final Boolean waitSuccess) {
         setProjectNameTextBox(project.getName());
         pressAccountDropdown();
         selectaccountDropdownFirstOption();
@@ -118,7 +121,7 @@ public class CreateProjectPopup extends BasePage {
         }
         pressCreateButton();
         if (waitSuccess) {
-            wait.withTimeout(10, TimeUnit.SECONDS).until(ExpectedConditions.urlContains("/n/projects"));
+            wait.withTimeout(DURATION, TimeUnit.SECONDS).until(ExpectedConditions.urlContains("/n/projects"));
         }
     }
 }

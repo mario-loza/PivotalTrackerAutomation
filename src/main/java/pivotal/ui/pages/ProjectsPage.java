@@ -8,6 +8,9 @@ import pivotal.ui.components.CreateProjectPopup;
 
 import java.util.List;
 
+/**
+ * ProjectsPage.
+ */
 public class ProjectsPage extends BasePage {
 
     @FindBy(css = ".project_name")
@@ -19,13 +22,25 @@ public class ProjectsPage extends BasePage {
     @FindBy(xpath = "//a[contains(.,'+ Create Project')]")
     private WebElement createProjectLink;
 
+    /**
+     * CreateProject Popup.
+     *
+     * @return CreateProjectPopup
+     */
     public CreateProjectPopup pressCreateProjectLink() {
         createProjectLink.click();
         return new CreateProjectPopup();
     }
 
-    public boolean projectNameIsListed(String projectName) {
-        List<WebElement> projects = driver.findElements(By.xpath("//a[@class=\"project_name\" and text()=\"" + projectName + "\"]"));
+    /**
+     * projectNameIsListed.
+     *
+     * @param projectName the project name.
+     * @return boolean
+     */
+    public boolean projectNameIsListed(final String projectName) {
+        List<WebElement> projects = driver.findElements(By.xpath("//a[@class=\"project_name\" and text()=\""
+                + projectName + "\"]"));
         return projects.size() > 0;
     }
 

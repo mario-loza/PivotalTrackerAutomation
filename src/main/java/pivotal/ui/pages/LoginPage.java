@@ -3,7 +3,6 @@ package pivotal.ui.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import pivotal.ui.pages.BasePage;
 
 /**
  * Created by Yesica on 07/05/2019.
@@ -27,22 +26,41 @@ public class LoginPage extends BasePage {
         wait.until(ExpectedConditions.visibilityOf(loginForm));
     }
 
-    public void login(String userName, String password) {
+    /**
+     * Login.
+     *
+     * @param userName user name
+     * @param password password
+     */
+    public void login(final String userName, final String password) {
         setUserName(userName);
         clickNextSignInBtn();
         setPassword(password);
         clickNextSignInBtn();
     }
 
-    private void setPassword(String password) {
+    /**
+     * Set Password.
+     *
+     * @param password the password
+     */
+    private void setPassword(final String password) {
         passwordTextBox.sendKeys(password);
     }
 
+    /**
+     *  click next Button.
+     */
     private void clickNextSignInBtn() {
         nextSignInBtn.click();
     }
 
-    private void setUserName(String userName) {
+    /**
+     * Set the username.
+     *
+     * @param userName the user name
+     */
+    private void setUserName(final String userName) {
         userNameTextBox.sendKeys(userName);
     }
 }
