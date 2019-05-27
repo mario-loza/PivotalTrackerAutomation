@@ -1,18 +1,27 @@
 package core.selenium;
 
+import core.utils.Logs;
+import org.apache.log4j.Logger;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
 /**
  * Class to manage the config of web driver.
  */
 public class WebDriverConfig {
-
-    private static final String BROWSER = "browser";
-
-    private String browser;
+    private static WebDriverConfig instance;
+    /**
+     * It creates to follow up the instruction of the class
+     */
+    private Logger log = Logs.getInstance().getLog();
     private int implicitWaitTime;
     private int explicitWaitTime;
     private int waitSleepTime;
 
-    private static WebDriverConfig instance;
+    protected WebDriverConfig() {
+        initialize();
+    }
 
     /**
      * Constructor of WebDriverConfig.
@@ -31,19 +40,20 @@ public class WebDriverConfig {
      * Initializes WebDriverConfig.
      */
     public void initialize() {
-        browser = System.getProperty(BROWSER);  //Get the browser system property
-        implicitWaitTime = 30;
-        explicitWaitTime = 40;
-        waitSleepTime = 500;
-    }
+        Properties properties = new Properties();
+        try {
+            FileInputStream in = new FileInputStream("web_driver.properties");
+            properties.load(in);
+            in.close();
+        } catch (Exception e) {
+            log.error(e.getMessage());
+            e.printStackTrace();
 
-    /**
-     * Gets the browser in which the tests are being executed.
-     *
-     * @return Browser.
-     */
-    public String getBrowser() {
-        return browser;
+        }
+
+        implicitWaitTime = Integer.parseInt(properties.getProperty("implicitWaitTime"));
+        explicitWaitTime = Integer.parseInt(properties.getProperty("explicitWaitTime"));
+        waitSleepTime = Integer.parseInt(properties.getProperty("waitSleepTime"));
     }
 
     /**
